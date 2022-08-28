@@ -47,9 +47,7 @@
     <p>party 555</p>
     <p>mink</p>
 
-    
-    
-
+    <p>mink</p>
 
 </body>
 
