@@ -1,0 +1,36 @@
+:root {
+    --orange: #ff8331;
+}
+
+.image-hotel {
+    height: 50vh;
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ff8331;
+    width: 100%;
+    height: fit-content;
+    top: 54vh;
+    left: 10%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.col-md-3 {
+    padding: 10px 5px;
+}
+
+p {
+    color: #ff8331;
+}
+
+.btnsearch {
+    border-left: 1px solid rgb(221, 221, 221);
+    background-color: #ff8331;
+    color: #fff;
+    border: none;
+    border-radius: 0px 10px 10px  0px; 
+}
