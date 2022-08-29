@@ -32,7 +32,7 @@
                     </li>
                 </ul>
                 <form class="login-regis" >
-                    <a href="" class="login" type="button" >เข้าสู่ระบบ/สมัครสมาชิก<i class='bx bxs-user-circle' style="width: 20px;"></i></a>
+                    <a href="./fuction/auth-login.php" class="login" type="button" >เข้าสู่ระบบ/สมัครสมาชิก<i class='bx bxs-user-circle' style="width: 20px;"></i></a>
                 </form>
             </div>
         </div>
