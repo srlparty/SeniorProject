@@ -15,7 +15,7 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
   </style>
-    <title>link</title>
+    
 </head>
 
 </html>

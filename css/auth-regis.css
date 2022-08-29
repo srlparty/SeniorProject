@@ -1,4 +1,21 @@
-
 * {
     font-family: 'Mitr', sans-serif;
+}
+
+body {
+    
+}
+
+.register {
+    position: absolute;
+    background-color: #fff;
+    color: #EF774B;
+    border-radius: 10px;
+    width: 30%;
+    margin: -123vh 5px 20px 575px !important;
+    padding: 10px 15px;
+}
+
+.forgetpass{
+    float: right;
 }

@@ -9,22 +9,14 @@
     <?php
     include "./importlink.php"
     ?>
-    <title>regis</title>
+    <title>login</title>
 </head>
 
 <body>
     <img src="../img/bbg.png" alt="">
 
     <form class="row g-3 register ">
-        <h2 class="text-center" style="margin-top: 50px ;">สมัครสมาชิก</h2>
-        <div class="col-md-6">
-            <label for="inputName" class="form-label">ชื่อ</label>
-            <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">นามสกุล</label>
-            <input type="password" class="form-control" id="inputPassword4">
-        </div>
+        <h2 class="text-center" style="margin-top: 50px ;">เข้าสู่ระบบ</h2>
         <div class="col-12">
             <label for="inputAddress" class="form-label">อีเมล</label>
             <input type="text" class="form-control" id="inputAddress" required>
@@ -32,10 +24,6 @@
         <div class="col-12">
             <label for="inputpassword" class="form-label">รหัสผ่าน</label>
             <input type="password" class="form-control" id="inputAddress2" required>
-        </div>
-        <div class="col-12">
-            <label for="inputpassword2" class="form-label">ยืนยันรหัสผ่าน</label>
-            <input type="password" class="form-control" id="inputpassword" required>
         </div>
         <div class="col-12 ">
             <div class="forgetpass">
@@ -45,9 +33,10 @@
             </div>
         </div>
         <div class="g-3  col-md-12 text-center">
-            <a href=".." type="submit" class="btn btn-primary w-50 ">ยืนยัน</a>
+
+            <a href="../user/home.php" type="submit" class="btn btn-primary w-50 ">ยืนยัน</a>
         </div>
-        <a href="../fuction/auth-login.php" class="text-center">สมัครสมาชิกอยู่แล้ว</a>
+        <a href="../fuction/auth-regis.php" class="text-center">สมัครสมาชิก</a>
     </form>
 </body>
 
