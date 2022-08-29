@@ -18,12 +18,12 @@
     <form class="row g-3 register ">
         <h2 class="text-center" style="margin-top: 50px ;">เข้าสู่ระบบ</h2>
         <div class="col-12">
-            <label for="inputAddress" class="form-label">อีเมล</label>
-            <input type="text" class="form-control" id="inputAddress" required>
+            <label for="input" class="form-label">อีเมล</label>
+            <input type="text" class="form-control" id="US_Email" name="US_Email" required>
         </div>
         <div class="col-12">
             <label for="inputpassword" class="form-label">รหัสผ่าน</label>
-            <input type="password" class="form-control" id="inputAddress2" required>
+            <input type="password" class="form-control" id="US_Pass" name="US_Pass" required>
         </div>
         <div class="col-12 ">
             <div class="forgetpass">
@@ -34,7 +34,7 @@
         </div>
         <div class="g-3  col-md-12 text-center">
 
-            <a href="..." type="submit" class="btn btn-primary w-50 ">ยืนยัน</a>
+            <a href="..."type="submit" name="login-btn" class="btn btn-primary w-50 ">ยืนยัน</a>
         </div>
         <a href="../fuction/auth-regis.php" class="text-center">สมัครสมาชิก</a>
     </form>

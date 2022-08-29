@@ -7,7 +7,8 @@
     <title>board</title>
 
     <link rel="stylesheet" href="../css/board.css">
-    <?php include "../admin/nav-admin.php"?>
+    <?php include "../admin/nav-admin.php";
+    include "../fuction/importlink.php"?>
 </head>
 <body>
     <div class="edit-board">
