@@ -5,86 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/nav-admin.css">
+    <link rel="stylesheet" href="../css/nav-admin.css">
 
-    <?php include "./fuction/importlink.php" ?>
+    <?php include "../fuction/importlink.php" ?>
+ 
     
 </head>
 <body>
   <div class="sidebar">
     <div class="logo-details">
-      <i class='bx bxl-c-plus-plus icon'></i>
-        <div class="logo_name">CodingLab</div>
+      <!-- <i class='bx bxl-c-plus-plus icon'></i>
+      <img src="./img/logovilla.png" alt="" width="40px" height="40px"> -->
+        <div class="logo_name">villa de panta</div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
       <li>
-          <i class='bx bx-search' ></i>
-         <input type="text" placeholder="Search...">
-         <span class="tooltip">Search</span>
-      </li>
-      <li>
-        <a href="#">
+        <a href="./admin/board.php">
           <i class='bx bx-grid-alt'></i>
-          <span class="links_name">Dashboard</span>
+          <span class="links_name">แก้ไขหน้าประชาสัมพันธ์</span>
         </a>
-         <span class="tooltip">Dashboard</span>
+         <span class="tooltip">แก้ไขหน้าประชาสัมพันธ์</span>
       </li>
       <li>
-       <a href="#">
+       <a href="./admin/manage.php">
          <i class='bx bx-user' ></i>
-         <span class="links_name">User</span>
+         <span class="links_name">จัดการห้องพัก</span>
        </a>
-       <span class="tooltip">User</span>
+       <span class="tooltip">จัดการห้องพัก</span>
      </li>
      <li>
        <a href="#">
          <i class='bx bx-chat' ></i>
-         <span class="links_name">Messages</span>
+         <span class="links_name">ตรวจสอบห้องว่าง</span>
        </a>
-       <span class="tooltip">Messages</span>
+       <span class="tooltip">ตรวจสอบห้องว่าง</span>
      </li>
      <li>
        <a href="#">
          <i class='bx bx-pie-chart-alt-2' ></i>
-         <span class="links_name">Analytics</span>
+         <span class="links_name">ตรวจสอบการชำระเงิน</span>
        </a>
-       <span class="tooltip">Analytics</span>
+       <span class="tooltip">ตรวจสอบการชำระเงิน</span>
      </li>
      <li>
        <a href="#">
          <i class='bx bx-folder' ></i>
-         <span class="links_name">File Manager</span>
+         <span class="links_name">Promotion</span>
        </a>
-       <span class="tooltip">Files</span>
+       <span class="tooltip">Promotion</span>
      </li>
      <li>
        <a href="#">
          <i class='bx bx-cart-alt' ></i>
-         <span class="links_name">Order</span>
+         <span class="links_name">ปฎิทินการจอง</span>
        </a>
-       <span class="tooltip">Order</span>
+       <span class="tooltip">ปฎิทินการจอง</span>
      </li>
      <li>
        <a href="#">
          <i class='bx bx-heart' ></i>
-         <span class="links_name">Saved</span>
+         <span class="links_name">Dashboard</span>
        </a>
-       <span class="tooltip">Saved</span>
-     </li>
-     <li>
-       <a href="#">
-         <i class='bx bx-cog' ></i>
-         <span class="links_name">Setting</span>
-       </a>
-       <span class="tooltip">Setting</span>
+       <span class="tooltip">Dashboard</span>
      </li>
      <li class="profile">
          <div class="profile-details">
            <!--<img src="profile.jpg" alt="profileImg">-->
            <div class="name_job">
-             <div class="name">Prem Shahi</div>
-             <div class="job">Web designer</div>
+             <div class="name">villa de panta</div>
+             <div class="job">Admin</div>
            </div>
          </div>
          <i class='bx bx-log-out' id="log_out" ></i>
@@ -97,7 +87,6 @@
   <script>
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
-  let searchBtn = document.querySelector(".bx-search");
 
   closeBtn.addEventListener("click", ()=>{
     sidebar.classList.toggle("open");
