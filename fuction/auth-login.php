@@ -34,7 +34,7 @@
         </div>
         <div class="g-3  col-md-12 text-center">
 
-            <a href="../user/home.php" type="submit" class="btn btn-primary w-50 ">ยืนยัน</a>
+            <a href="..." type="submit" class="btn btn-primary w-50 ">ยืนยัน</a>
         </div>
         <a href="../fuction/auth-regis.php" class="text-center">สมัครสมาชิก</a>
     </form>
