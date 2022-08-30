@@ -7,35 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/auth-regis.css">
     <?php
-    include "./importlink.php"
+    session_start();
+    include "./importlink.php";
+    require_once './connectDB.php'
     ?>
     <title>regis</title>
 </head>
 
 <body>
     <img src="../img/bbg.png" alt="">
-
-    <form class="row g-3 register ">
+    <form class="row g-3 register " action="./signup_db.php" method="POST">
         <h2 class="text-center" style="margin-top: 50px ;">สมัครสมาชิก</h2>
-        <div class="col-md-6">
-            <label for="inputName" class="form-label">ชื่อ</label>
-            <input type="email" class="form-control" id="inputEmail4">
+        <?php if (isset($_SESSION['error'])) { ?>
+            <div class="alert alert-danger g-3" role="alert">
+                <?php
+                echo $_SESSION['error'];
+                unset($_SESSION['error']);
+                ?>
+            </div>
+        <?php } ?>
+
+        <?php if (isset($_SESSION['success'])) { ?>
+            <div class="alert alert-success" role="alert">
+                <?php
+                echo $_SESSION['success'];
+                unset($_SESSION['success']);
+                ?>
+            </div>
+        <?php } ?>
+
+        <?php if (isset($_SESSION['warning'])) { ?>
+            <div class="alert alert-warning" role="alert">
+                <?php
+                echo $_SESSION['warning'];
+                unset($_SESSION['warning']);
+                ?>
+            </div>
+        <?php } ?><div class="col-md-6">
+            <label class="form-label">ชื่อ</label>
+            <input type="text" name="firstname" class="form-control">
         </div>
         <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">นามสกุล</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <label class="form-label">นามสกุล</label>
+            <input type="text" name="lastname" class="form-control">
         </div>
         <div class="col-12">
-            <label for="inputAddress" class="form-label">อีเมล</label>
-            <input type="text" class="form-control" id="inputAddress" required>
+            <label class="form-label">อีเมล</label>
+            <input type="email" name="email" class="form-control">
         </div>
         <div class="col-12">
-            <label for="inputpassword" class="form-label">รหัสผ่าน</label>
-            <input type="password" class="form-control" id="inputAddress2" required>
+            <label class="form-label">รหัสผ่าน</label>
+            <input type="password" name="password" class="form-control">
         </div>
         <div class="col-12">
-            <label for="inputpassword2" class="form-label">ยืนยันรหัสผ่าน</label>
-            <input type="password" class="form-control" id="inputpassword" required>
+            <label class="form-label">ยืนยันรหัสผ่าน</label>
+            <input type="password" name="cf_password" class="form-control">
         </div>
         <div class="col-12 ">
             <div class="forgetpass">
@@ -45,9 +71,9 @@
             </div>
         </div>
         <div class="g-3  col-md-12 text-center">
-            <a href=".." type="submit" class="btn btn-primary w-50 ">ยืนยัน</a>
+            <button type="submit" name="signup" class="btn btn-primary w-50 ">สมัครสมาชิก</button>
         </div>
-        <a href="../fuction/auth-login.php" class="text-center">สมัครสมาชิกอยู่แล้ว</a>
+        <a href="../fuction/auth-login.php" class="text-center">มีสมาชิกอยู่แล้ว</a>
     </form>
 </body>
 

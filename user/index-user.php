@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/indax.css">
 
     <?php
+    
     include "./nav.php";
     include "../fuction/connectDB.php";
     ?>

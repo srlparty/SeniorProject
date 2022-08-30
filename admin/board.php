@@ -30,5 +30,7 @@
   </tbody>
 </table>
     </div>
+
+    <?php require '../fuction/modal-user.php' ?> 
 </body>
 </html>
