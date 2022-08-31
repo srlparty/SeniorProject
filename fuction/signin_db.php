@@ -4,16 +4,16 @@ session_start();
 require_once './connectDB.php';
 if (isset($_POST['signin'])) {
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $us_password = $_POST['us_password'];
     
     
     if (empty($email)) {
-        $_SESSION['error'] = 'กรุณากรอกนามอีเมล';
+        $_SESSION['error'] = 'กรุณากรอกอีเมล';
         header("location: auth-login.php");
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['error'] = 'รูปแบบอีเมลไม่ถูกต้อง';
         header("location: auth-login.php");
-    } else if (empty($password)) {
+    } else if (empty($us_password)) {
         $_SESSION['error'] = 'กรุณากรอกรหัสผ่าน';
         header("location: auth-login.php");
     } else {
@@ -21,7 +21,7 @@ if (isset($_POST['signin'])) {
 
     try {
 
-        $check_data = $conn->prepare("SELECT * FROM users WHERE email = :email");
+        $check_data = $conn->prepare("SELECT * FROM user WHERE email = :email");
         $check_data->bindParam(":email" , $email);
         $check_data->execute();
         $row = $check_data->fetch(PDO::FETCH_ASSOC);
@@ -29,12 +29,12 @@ if (isset($_POST['signin'])) {
         if ($check_data->rowCount() > 0 ){
 
             if ($email == $row['email']){
-                if (password_verify($password, $row['password'])){
-                    if ($row['urole'] == 'admin'){
-                        $_SESSION['admin_login'] = $row['id'];
+                if (password_verify($us_password, $row['us_password'])){
+                    if ($row['UST_ID'] == '2'){
+                        $_SESSION['admin_login'] = $row['US_ID'];
                         header("location: ../admin/board.php");
                     }else {
-                        $_SESSION['user_login'] = $row['id'];
+                        $_SESSION['user_login'] = $row['US_ID'];
                         header("location: ../user/index-user.php");
                     }
                 } else{
