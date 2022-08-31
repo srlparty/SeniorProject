@@ -21,14 +21,14 @@
     </div>
     <ul class="nav-list">
       <li>
-        <a href="./admin/board.php">
+        <a href="./board.php">
           <i class='bx bx-grid-alt'></i>
           <span class="links_name">แก้ไขหน้าประชาสัมพันธ์</span>
         </a>
          <span class="tooltip">แก้ไขหน้าประชาสัมพันธ์</span>
       </li>
       <li>
-       <a href="./admin/manage.php">
+       <a href="./manage.php">
          <i class='bx bx-user' ></i>
          <span class="links_name">จัดการห้องพัก</span>
        </a>

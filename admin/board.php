@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>board</title>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+
     <link rel="stylesheet" href="../css/board.css">
     <?php include "../admin/nav-admin.php";
     include "../fuction/importlink.php"?>

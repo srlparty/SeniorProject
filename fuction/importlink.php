@@ -15,7 +15,10 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
   </style>
-    
+  <!-- jquery table -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- JavaScript ของ DataTables -->
+  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 </head>
 
 </html>
