@@ -39,11 +39,11 @@
         <?php } ?>
 
         <label for="input" class="form-label">อีเมล</label>
-        <input type="text" class="form-control" id="US_Email" name="US_Email" required>
+        <input type="email" class="form-control" id="email" name="email" required>
         </div>
         <div class="col-12">
             <label for="inputpassword" class="form-label">รหัสผ่าน</label>
-            <input type="password" class="form-control" id="US_Pass" name="US_Pass" required>
+            <input type="password" class="form-control" id="us_password" name="us_password" required>
 
         </div>
         <div class="col-12 ">

@@ -57,7 +57,7 @@
         </div>
         <div class="col-12">
             <label class="form-label">รหัสผ่าน</label>
-            <input type="password" name="password" class="form-control">
+            <input type="password" name="us_password" class="form-control">
         </div>
         <div class="col-12">
             <label class="form-label">ยืนยันรหัสผ่าน</label>
@@ -73,7 +73,7 @@
         <div class="g-3  col-md-12 text-center">
             <button type="submit" name="signup" class="btn btn-primary w-50 ">สมัครสมาชิก</button>
         </div>
-        <a href="../fuction/auth-login.php" class="text-center">มีสมาชิกอยู่แล้ว</a>
+        <a href="../fuction/auth-login.php" class="text-center">เป็นสมาชิกอยู่แล้ว</a>
     </form>
 </body>
 
