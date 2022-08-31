@@ -17,61 +17,35 @@
 <body>
 <h3>จัดการห้องพัก</h3>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary addroom" data-bs-toggle="modal" data-bs-target="#exampleModal">
+<button type="button" class="btn btn-primary addroom style = color:#EF774B" data-bs-toggle="modal" data-bs-target="#exampleModal">
   เพิ่มห้องพัก
 </button>
 
   <table id="myTable" class="display" style="width: 100%;">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Position</th>
-        <th>Office</th>
-        <th>Age</th>
-        <th>Start date</th>
-        <th>Salary</th>
+        <th>เลขห้อง</th>
+        <th>ประเภทห้อง</th>
+        <th>ประเภทเตียง</th>
+        <th>สิ่งอำนวยความสะดวก</th>
+        <th>#</th>
+        <th>ราคา</th>
+        <th>จัดการ</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Tiger Nixon</td>
-        <td>System Architect</td>
-        <td>Edinburgh</td>
-        <td>61</td>
-        <td>2011/04/25</td>
-        <td>$320,800</td>
-      </tr>
-      <tr>
-        <td>Garrett Winters</td>
-        <td>Accountant</td>
-        <td>Tokyo</td>
-        <td>63</td>
-        <td>2011/07/25</td>
-        <td>$170,750</td>
-      </tr>
-      <tr>
-        <td>Ashton Cox</td>
-        <td>Junior Technical Author</td>
-        <td>San Francisco</td>
-        <td>66</td>
-        <td>2009/01/12</td>
-        <td>$86,000</td>
-      </tr>
-      <tr>
-        <td>Cedric Kelly</td>
-        <td>Senior Javascript Developer</td>
-        <td>Edinburgh</td>
-        <td>22</td>
-        <td>2012/03/29</td>
-        <td>$433,060</td>
-      </tr>
-      <tr>
-        <td>Airi Satou</td>
-        <td>Accountant</td>
-        <td>Tokyo</td>
-        <td>33</td>
-        <td>2008/11/28</td>
-        <td>$162,700</td>
+        <td>..</td>
+        <td>..</td>
+        <td>..</td>
+        <td>..</td>
+        <td>..</td>
+        <td>...</td>
+        <td>
+            <div class="edit-delete">
+
+            </div>
+        </td>
       </tr>
     </tbody>
   </table>
