@@ -30,6 +30,7 @@
                 <th>สิ่งอำนวยความสะดวก</th>
                 <th>จำนวนผู้เข้าพัก</th>
                 <th>ราคา</th>
+                <th>รูปภาพ</th>
                 <th>จัดการ</th>
             </tr>
         </thead>
@@ -40,6 +41,7 @@
                 <td>..</td>
                 <td>..</td>
                 <td>..</td>
+                <td>...</td>
                 <td>...</td>
                 <td>
                     <div class="edit-delete">

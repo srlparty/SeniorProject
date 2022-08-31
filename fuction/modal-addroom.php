@@ -11,7 +11,7 @@
                 <form>
                     <div class="mb-3">
                         <label for="text" class="form-label">เลขห้อง</label>
-                        <input type="text" class="form-control" id="room-number" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" id="room-number" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเลขห้อง">
                     </div>
                     <div class="mb-3">
                         <label for="text" class="form-label">ประเภทห้อง</label>
@@ -97,7 +97,19 @@
                             <input id="number" type="number" value="" class="form-control" id="bed2" aria-describedby="emailHelp" placeholder="กรุณากำหนดจำนวนผู้เข้าพัก">
                         </div>
                     </div>
-                </form>
+                    <div class="mb-3">
+                        <label for="text" class="form-label">ราคา</label>
+                        <input type="text" class="form-control" id="price-room" aria-describedby="emailHelp" placeholder="กรุณากำหนดราคาห้องพัก">
+                    </div>
+                    <div class="mb-3">
+                        <label for="text" class="form-label">รูปภาพ</label><br>
+
+                        <!-- โค้ดอัพรูปได้หลายๆรูป -->
+                        <!-- <form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+                            <input type="file" name="file[]" accept="image/png, image/gif, image/jpeg" multiple>
+                            <input type="submit" value="อัปโหลด">
+                        </form> -->
+                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success">บันทึก</button>
@@ -106,3 +118,19 @@
         </div>
     </div>
 </div>
+
+
+<!-- โค้ดอัพรูปได้หลายๆรูป -->
+<!-- <?php
+    isset( $_FILES['file'] ) ? $file = $_FILES['file'] : $file = "";
+
+    if( !empty( $file ) ) {
+        for( $i=0; $i<count( $file['name'] ); $i++ ) {
+            $file_name = $file['name'][$i];
+            $file_tmp_name = $file['tmp_name'][$i];
+            if( move_uploaded_file( $file_tmp_name, $file_name )) {
+                echo "<img src='{$file_name}' /><br/>";
+            }
+        }
+    }
+?> -->
