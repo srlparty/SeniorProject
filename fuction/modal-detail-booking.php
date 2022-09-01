@@ -28,6 +28,12 @@
                             <div class="service"><b>บริการเสริม :</b>
                                 <label for="text" class="form-label">ใส่โค้ด</label><br>
                             </div>
+                            <div class="bank"><b>โอนจากธนาคาร :</b>
+                                <label for="text" class="form-label">ใส่โค้ด</label><br>
+                            </div>
+                            <div class="time-pay"><b>เวลาที่โอน :</b>
+                                <label for="text" class="form-label">ใส่โค้ด</label><br>
+                            </div>
                             <label for="text" class="form-label"><b>ชื่อผู้จอง</b></label><br>
                             <div class="price-book"><b>ราคารวม :</b>
                                 <label for="text" class="form-label">ใส่โค้ด</label><br>
