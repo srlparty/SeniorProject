@@ -22,49 +22,63 @@
     <ul class="nav-list">
       <li>
         <a href="./board.php">
-          <i class='bx bx-grid-alt'></i>
+        <i class='bx bxs-chalkboard' ></i>
           <span class="links_name">แก้ไขหน้าประชาสัมพันธ์</span>
         </a>
          <span class="tooltip">แก้ไขหน้าประชาสัมพันธ์</span>
       </li>
       <li>
        <a href="./manage.php">
-         <i class='bx bx-user' ></i>
+       <i class='bx bxs-bed' ></i> 
          <span class="links_name">จัดการห้องพัก</span>
        </a>
        <span class="tooltip">จัดการห้องพัก</span>
      </li>
      <li>
-       <a href="#">
-         <i class='bx bx-chat' ></i>
+       <a href="./Check-availability.php">
+       <i class='bx bxs-check-square' ></i>
          <span class="links_name">ตรวจสอบห้องว่าง</span>
        </a>
        <span class="tooltip">ตรวจสอบห้องว่าง</span>
      </li>
      <li>
-       <a href="#">
-         <i class='bx bx-pie-chart-alt-2' ></i>
+       <a href="./check-pay.php">
+       <i class='bx bx-wallet'></i>
          <span class="links_name">ตรวจสอบการชำระเงิน</span>
        </a>
        <span class="tooltip">ตรวจสอบการชำระเงิน</span>
      </li>
      <li>
+       <a href="./walk-in.php">
+       <i class='bx bx-walk' ></i>
+         <span class="links_name">การจองแบบ Walk in</span>
+       </a>
+       <span class="tooltip">การจองแบบ Walk in</span>
+     </li>
+     <li>
        <a href="#">
-         <i class='bx bx-folder' ></i>
+       <i class='bx bxs-purchase-tag'></i>
          <span class="links_name">Promotion</span>
        </a>
        <span class="tooltip">Promotion</span>
      </li>
      <li>
-       <a href="#">
-         <i class='bx bx-cart-alt' ></i>
+       <a href="./calender.php">
+       <i class='bx bxs-calendar' ></i>
          <span class="links_name">ปฎิทินการจอง</span>
        </a>
        <span class="tooltip">ปฎิทินการจอง</span>
      </li>
      <li>
+       <a href="./accounting.php">
+       <i class='bx bx-money-withdraw'></i>
+         <span class="links_name">บัญชี</span>
+       </a>
+       <span class="tooltip">บัญชี</span>
+     </li>
+     <li>
        <a href="#">
-         <i class='bx bx-heart' ></i>
+       <i class='bx bxs-dashboard' ></i>
          <span class="links_name">Dashboard</span>
        </a>
        <span class="tooltip">Dashboard</span>
