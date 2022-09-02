@@ -25,14 +25,17 @@
                         <a class="nav-link" aria-current="page" href="../user/index-user.php">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../fuction/pay.php">ชำระเงิน</a>
+                        <a class="nav-link" href="../user/pay.php">ชำระเงิน</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">รายละเอียดการจอง</a>
+                        <a class="nav-link" href="#">การจองของฉัน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">วิธีการใช้งานเว็บ</a>
                     </li>
                 </ul>
                 <form class="login-regis" >
-                    <a href="./fuction/auth-login.php" class="login" type="button" >เข้าสู่ระบบ/สมัครสมาชิก<i class='bx bxs-user-circle' style="width: 20px;"></i></a>
+                    <!-- <a href="./fuction/auth-login.php" class="login" type="button" >เข้าสู่ระบบ/สมัครสมาชิก<i class='bx bxs-user-circle' style="width: 20px;"></i></a> -->
                 </form>
             </div>
         </div>

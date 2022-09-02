@@ -25,10 +25,13 @@
                         <a class="nav-link" aria-current="page" href="./index.php">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ชำระเงิน</a>
+                        <a class="nav-link" href="...">ชำระเงิน</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ">รายละเอียดการจอง</a>
+                        <a class="nav-link ">การจองของฉัน</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./howto.php">วิธีการใช้งานเว็บไซต์</a>
                     </li>
                 </ul>
                 <form class="login-regis" >
