@@ -35,6 +35,13 @@
        <span class="tooltip">จัดการห้องพัก</span>
      </li>
      <li>
+       <a href="./service.php">
+       <i class='bx bxs-file-plus'></i>
+         <span class="links_name">บริการเสริม</span>
+       </a>
+       <span class="tooltip">บริการเสริม</span>
+     </li>
+     <li>
        <a href="./Check-availability.php">
        <i class='bx bxs-check-square' ></i>
          <span class="links_name">ตรวจสอบห้องว่าง</span>
@@ -56,7 +63,7 @@
        <span class="tooltip">การจองแบบ Walk in</span>
      </li>
      <li>
-       <a href="#">
+       <a href="./promotion.php">
        <i class='bx bxs-purchase-tag'></i>
          <span class="links_name">Promotion</span>
        </a>

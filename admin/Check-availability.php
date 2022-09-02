@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <h3>ตรวจสอบห้องว่าง</h3>
+    <h2><b>ตรวจสอบห้องว่าง</b></h2>
     <div class="card-group">
         <div class="card" style="background-color: #145A32; color:aliceblue;">
             <div class="card-header"><i class='bx bxs-bed'></i> ว่าง</div>

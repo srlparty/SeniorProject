@@ -13,6 +13,12 @@ body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.addpro{
+    margin-left: 1360px;
+    width: 150px;
+    height: 45px;
+    font-size: 30px;
+}
 .dataTables_wrapper{
     margin-top: 20px;
 }

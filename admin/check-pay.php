@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <h3>ตรวจสอบการชำระเงิน</h3>
+    <h2><b>ตรวจสอบการชำระเงิน</b></h2>
     <table id="myTable" class="display" style="width: 100%;">
         <thead>
             <tr>

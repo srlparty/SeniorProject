@@ -19,3 +19,6 @@ body{
     height: 45px;
     font-size: 30px;
 }
+.dataTables_wrapper{
+    margin-top: 20px;
+}
