@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <h3>บัญชี</h3>
+    <h2><b>บัญชี</b></h2>
     <table id="myTable" class="display" style="width: 100%;">
         <thead>
             <tr>

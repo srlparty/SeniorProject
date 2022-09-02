@@ -13,3 +13,6 @@ body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.dataTables_wrapper{
+    margin-top: 20px;
+}
