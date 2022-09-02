@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
+
     <title>Home</title>
     <link rel="stylesheet" href="../css/indax.css">
 
@@ -23,20 +23,12 @@
     <img class="image-hotel" src="../img/banner1.png" class="d-block w-100" alt="...">
 
     <!-- container Search -->
-=======
-    <link rel="stylesheet" href="./css/indax.css">
-    <title>Index</title>
-    <?php include "./nav.php" ?>
-</head>
 
 <body>
 
-    <img class="image-hotel" src="./img/banner1.png" class="d-block w-100" alt="...">
-
->>>>>>> origin/master
     <div class="container text-center">
         <div class="row">
-            <div class="col-md-3 ">
+        <div class="col-md-3 ">
                 <p>วันที่เช็คอิน</p>
                 <form method="POST" class="hstack gap-4 mt-4">
                     <label>เลือกวันที่เช็คอิน</label>
@@ -50,12 +42,13 @@
                     <input type="date" class="form-control" style="width: 50%;">
                 </form>
             </div>
-            <div class="col-md-3" style="border-left: 1px solid rgb(221, 221, 221) ;  ">
-                <p>ประเภทห้องพัก</p>
-                <form method="POST" class="hstack gap-4 mt-4">
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="">Standard</option>
-                    </select>
+            <div class="col-md-3" style="border-left: 1px solid rgb(221, 221, 221) ;">
+                <p>จำนวนคน</p>
+                    <form method="POST" class="hstack gap-4 mt-4">
+                <label class="form-check-label" for="flexCheckDefault">ผู้ใหญ่</label>
+                <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp">
+                <label class="form-check-label" for="flexCheckDefault">เด็ก</label>
+                <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp">
                 </form>
             </div>
             <button class="col-md-3 btnsearch" href="">
@@ -64,7 +57,7 @@
         </div>
     </div>
 
-<<<<<<< HEAD
+
     <!-- card public relations -->
     <h2>ประชาสัมพันธ์</h2>
     <div class="card-body news">
@@ -122,12 +115,7 @@
     </div>
 
     <?php  require '../fuction/modal-user.php'?>
-=======
-    <p>party 555</p>
-    <p>mink</p>
 
-    <p>mink</p>
->>>>>>> origin/master
 
 </body>
 

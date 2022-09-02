@@ -13,7 +13,7 @@ body {
 .contrainer{
     background-color: #f2f2f2;
     width: 1500px;
-    height: 600px;
+    height: 800px;
     margin-left: 100px;
     border-radius: 20px;
     box-shadow: #EF774B;
@@ -27,5 +27,5 @@ body {
 }
 .grcode{
     margin-left: 1000px;
-    margin-top: -450px;
+    margin-top: -680px;
 }
