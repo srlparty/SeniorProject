@@ -1,0 +1,19 @@
+* {
+    font-family: 'Mitr', sans-serif;
+}
+
+:root {
+    --orange: #EF774B;
+}
+
+body {
+  
+}
+#myTable{
+    background-color: #EF774B;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

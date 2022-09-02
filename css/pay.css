@@ -1,0 +1,31 @@
+* {
+    font-family: 'Mitr', sans-serif;
+}
+
+:root {
+    --orange: #EF774B;
+}
+
+body {
+    
+}
+
+.contrainer{
+    background-color: #f2f2f2;
+    width: 1500px;
+    height: 800px;
+    margin-left: 100px;
+    border-radius: 20px;
+    box-shadow: #EF774B;
+}
+.payment {
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 1500px;
+    height: 500px;
+    
+}
+.grcode{
+    margin-left: 1000px;
+    margin-top: -680px;
+}

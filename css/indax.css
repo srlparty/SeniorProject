@@ -6,9 +6,14 @@
     --orange: #EF774B;
 }
 
+
 .image-hotel {
     height: 50vh;
     width: 100%;
+}
+h5{
+    color: #000;
+    
 }
 
 /* container Search */

@@ -43,7 +43,8 @@
                 unset($_SESSION['warning']);
                 ?>
             </div>
-        <?php } ?><div class="col-md-6">
+        <?php } ?>
+        <div class="col-md-6">
             <label class="form-label">ชื่อ</label>
             <input type="text" name="firstname" class="form-control">
         </div>

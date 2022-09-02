@@ -15,7 +15,36 @@
 
 <body>
 
-    <img class="image-hotel" src="./img/banner1.png" class="d-block w-100" alt="...">
+    <!-- <img class="image-hotel" src="./img/banner1.png" class="d-block w-100" alt="..."> -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="image-hotel" src="./img/banner1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img  class="image-hotel"  src="./img/banner2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img class="image-hotel"  src="./img/banner3.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
 
     <!-- container Search -->
     <div class="container text-center">
@@ -34,14 +63,29 @@
                     <input type="date" class="form-control" style="width: 50%;">
                 </form>
             </div>
-            <div class="col-md-3" style="border-left: 1px solid rgb(221, 221, 221) ;  ">
-                <p>ประเภทห้องพัก</p>
-                <form method="POST" class="hstack gap-4 mt-4">
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="">Standard</option>
-                    </select>
+            <div class="col-md-3" style="border-left: 1px solid rgb(221, 221, 221) ;">
+                <p>จำนวนคน</p>
+                    <form method="POST" class="hstack gap-4 mt-4">
+                <label class="form-check-label" for="flexCheckDefault">ผู้ใหญ่</label>
+                <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp">
+                <label class="form-check-label" for="flexCheckDefault">เด็ก</label>
+                <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp">
                 </form>
             </div>
+            <!-- <div class="col-md-3" style="border-left: 1px solid rgb(221, 221, 221) ;  ">
+                <p>ประเภทห้องพัก</p>
+                <form method="POST" class="hstack gap-4 mt-4">
+                <label for="R_Type" class="form-label">ประเภทห้อง</label>
+                        <select id="R_Type" class="form-control" name="R_Type" placeholder="ประเภทห้องพัก">
+                            <option selected>เลือกประเภทห้อง</option>
+                            <option value="1">Standard</option>
+                            <option value="2">Family</option>
+                            <option value="3">Superior</option>
+                            <option value="4">Deluxe</option>
+                            <option value="5">Triple Family room</option>
+                        </select>
+                </form>
+            </div> -->
             <button class="col-md-3 btnsearch" href="">
                 ค้นหา
             </button>
@@ -53,6 +97,13 @@
     <div class="card-body news">
         ที่พักบรรยากาศอบอุ่น บ้านสวน ริมคลองท้องทุ่งนา บรรยากาศแห่งการพักผ่อน ที่ห้อมล้อมด้วยธรรมชาติ บรรยากาศแห่งความสุข และผ่อนคลาย ที่ "วิลล่าเดอพันตา" ภูเรือ
     </div>
+    <h2>ประเภทห้องพัก</h2>
+    <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Standard</p>
+  </div>
+</div>
 
 
 
