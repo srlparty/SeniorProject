@@ -13,11 +13,25 @@
     <link rel="stylesheet" href="../css/calender.css">
     <?php include "../admin/nav-admin.php";
     include "../fuction/importlink.php" ?>
-</head>
 
+    <!-- calender -->
+    <link href='../fullcalendar/lib/main.css' rel='stylesheet' />
+    <script src='../fullcalendar/lib/main.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
+</head>
 <body>
-    <h2><b>ตรวจสอบห้องว่าง</b></h2>
-    
+    <h2><b>ปฎิทินการจอง</b></h2>
+    <div id='calendar'></div>
 </body>
 
 </html>
