@@ -26,7 +26,7 @@ h5{
     left: 10%;
     border-radius: 20px;
     z-index: 1;
-    box-shadow: -1px 6px 5px #d2d2d2,
+    box-shadow: -1px 6px 5px #F4F6F6,
         0px -1px 4px;
 
 }
@@ -68,15 +68,18 @@ h2{
 
 /* card room */
 .card {
-   
     margin-top: 30px;
-    margin-left: 155px;
-    text-align: center;
-    width: 1350px;
+    margin-left: 200px;
+    /*text-align: center;
+    */width: 1300px;
+    height: 300px;
     border-radius: 30px;
     background: #e0e0e0;
-    box-shadow: -8px 8px 16px #f9f9f9,
-        8px -8px 16px #f9f9f9;
+    box-shadow: -8px 8px 16px #f9f9f9,        8px -8px 16px #f9f9f9;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 .room-detail{
     padding: 20px 50px !important;
@@ -88,6 +91,8 @@ h2{
 }
 .title{
     color: #000;
+    margin-top: -40px;
+    text-align: center;
 
 }
 .card-t{
@@ -100,10 +105,10 @@ h2{
 }
 
 .subroom {
-    margin-top: 30px;
+    
     width: 180px;
     height: 50px;
-    margin-left: 650px;
+    margin-left: 600px;
     border-radius: 10px;
     border: 1px solid #EF774B;
     background: #EF774B;
@@ -114,7 +119,7 @@ h2{
 /* mapvilla */
 .Villa{
     margin-top: 50px;
-    background-color: #cfcfcf;
+    background-color: #E5E7E9;
     height: 600px;
 }
 .mapvilla{
