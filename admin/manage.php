@@ -53,7 +53,7 @@
         </tbody>
     </table>
     <?php require '../fuction/modal-addroom.php' ;
-    require '../fuction/modal-editroom.php'?>
+    require '../fuction/modal-editroom-1.php'?>
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();
