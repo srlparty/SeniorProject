@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Booking Room</title>
-    <link rel="stylesheet" href="./css/mybooking.css">
+    <link rel="stylesheet" href="../css/mybooking.css">
 
     <!-- table -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
 
     <?php
     include "./nav.php";
-    include "../seniorproject/fuction/connectDB.php";
-    include "./fuction/importlink.php"
+    include "../fuction/connectDB.php";
+    include "../fuction/importlink.php"
     ?>
 
 </head>
@@ -44,7 +44,7 @@
                 <td>?php echo $row['PM_Name']; ?></td>
                 <td>
                 <div class="detail-booking">
-                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#detail-booking">ดูรายละเอียด</button>
+                    <button type="button" class="btn btn-link text-white" style=" background-color: #EF774B;"   data-bs-toggle="modal" data-bs-target="#detail-booking">ดูรายละเอียด</button>
                     </div>
                 </td>
                 <td>..</td>

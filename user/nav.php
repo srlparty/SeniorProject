@@ -22,25 +22,35 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../user/index-user.php">หน้าหลัก</a>
+                        <a class="nav-link" aria-current="page" href="./index-user.php">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../user/pay.php">ชำระเงิน</a>
+                        <a class="nav-link" href="./pay.php">ชำระเงิน</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">การจองของฉัน</a>
+                        <a class="nav-link" href="./mybooking.php">การจองของฉัน</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">วิธีการใช้งานเว็บ</a>
                     </li>
                 </ul>
-
-                <button type="submit" name="logout" class="btn btn-danger  ">ออกจากระบบ</button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ดึงชื่อuser
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-white">
+                        <li><a class="dropdown-item" href="#">แก้ไขข้อมูลส่วนตัว</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                    </ul>
                 </div>
-                <!-- <form class="login-regis" >
+            </div>
+            <!-- <form class="login-regis" >
                     <a href="./fuction/auth-login.php" class="login" type="button" >เข้าสู่ระบบ/สมัครสมาชิก<i class='bx bxs-user-circle' style="width: 20px;"></i></a>
                 </form> -->
-            </div>
+        </div>
         </div>
     </nav>
 </body>

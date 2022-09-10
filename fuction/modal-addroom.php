@@ -7,44 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-  include('connectDB.php');
-  if (isset($_POST["save-btn"])) {
-    $R_ID = $_POST['R_ID'];
-    $R_Type = $_POST['R_Type'];
-    $R_Bed = $_POST['R_Bed'];
-    $R_Detail = $_POST['R_Detail'];
-    $R_guest = $_POST['R_guest'];
-    $R_Price = $_POST['R_Price'];
-    $R_Img = $_POST['R_Img'];
-    $R_Status  = $_POST['R_Status '];
-    $R_Img_tmp = $_FILES['R_Img']['tmp_name'];
-    $R_Img_name = $_FILES['R_Img']['name'];
-    $R_Img_type = $_FILES['R_Img']['type'];
-    $R_Img = 'images/' . $R_Img_name;
-
-    if (isset($_POST["R_ID"]) != "" && isset($_POST["R_Type"]) != "" && isset($_POST["R_Bed"]) != "" && isset($_POST["R_Detail"]) != "" && isset($R_Img) != "R_guest"  && isset($R_Img) != "R_Price"  && isset($R_Img) != "R_Img"  && isset($R_Img) != "R_Status") {
-      $sqlCheck = "SELECT R_ID FROM room WHERE R_ID='$R_ID'";
-    //   $rsCheck = mysqli_query($conn, $sqlCheck);
-    //   $rowCheck = mysqli_num_rows($rsCheck);
-    //   if ($rowCheck > 0) {
-    //       echo "<script>alert('เลขห้องพักซ้ำ กรุณาเปลี่ยนเลขห้องพัก');</script>";
-    //   }else{
-    //       $sqlInsert = "INSERT INTO room (R_ID, R_Type, R_Detail, R_Price ,R_Img) VALUES ('$R_ID', '$R_Type',  '$R_Detail', '$R_Price', '$R_Img')";
-    //       if (mysqli_query($conn, $sqlInsert)) {
-    //           echo "<script>alert('เพิ่มห้องสำเร็จ');window.location='manage.php';</script>";
-    //        } else {
-    //           echo "<script>alert('เกิดข้อผิดพลาดกรุณาลองอีกครั้ง');</script>";
-    //             }
-    //         }
-    //     } else {
-    //         echo "<script>alert('เกิดข้อผิดพลาดกรุณาลองอีกครั้ง');</script>";
-    }
-  }
-
-
-  ?>
-
 
 
 <!-- Modal -->
@@ -184,6 +146,6 @@
         }
         ?> -->
 
-
+    
 </body>
 </html>

@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <div class="shadow p-3 mb-5 bg-body rounded" style="height: 100px;" display="flex;">
         <div class="container text-center ">
             <div class="row">
@@ -33,59 +34,57 @@
                 </div>
                 <div class="col-md-3 ">
                     <form method="POST" class="hstack gap-4 mt-4">
-                        <label>จำนวนคน</label>
-                        <label class="form-check-label" for="flexCheckDefault">ผู้ใหญ่</label>
-                        <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp">
-                        <label class="form-check-label" for="flexCheckDefault">เด็ก</label>
-                        <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp">
+                        <!-- <label>จำนวนคน</label> -->
+                        <label>ผู้ใหญ่</label>
+                        <input id="number" type="number" value=""class="form-control" name="1" style="width: 100px;">
+                        <label>เด็ก</label>
+                        <input id="number" type="number" value="" class="form-control"  name="1" style="width: 100px;" >
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+
         <div class="contrainer">
             <form action="">
                 <div class="payment"><br>
                     <h4>กรอกข้อมูลการชำระเงิน</h4>
                     <div class="col-md-6"><br>
                         <label class="form-label">เลขบัตรประจำตัวประชาชน 13 หลัก</label>
-                        <input type="email" name="" class="form-control">
+                        <input type="text" name="PM_Idcard" class="form-control">
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label">ชื่อ</label>
-                        <input type="text" name="firstname" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">นามสกุล</label>
-                        <input type="text" name="lastname" class="form-control">
+                        <label class="form-label">ชื่อ-นามสกุล</label>
+                        <input type="text" name="PM_Name" class="form-control">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">อีเมล</label>
-                        <input type="email" name="email" class="form-control">
+                        <input type="email" name="PM_Email" class="form-control">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">เบอร์โทรศัพท์</label>
-                        <input type="email" name="" class="form-control">
+                        <input type="text" name="PM_Tel" class="form-control">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">วันที่โอนเงิน</label>
-                        <input type="text" name="" class="form-control">
+                        <input type="date" name="PM_Date" class="form-control">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">เวลาที่โอนเงิน</label>
-                        <input type="text" name="" class="form-control">
+                        <input type="time" name="PM_Time" class="form-control">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">ธนาคารที่ใช้โอนเงิน</label>
-                        <input type="text" name="" class="form-control">
+                        <input type="text" name="PM_Bank" class="form-control">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">จำนวนเงินที่โอน</label>
-                        <input type="text" name="" class="form-control">
+                        <input type="text" name="PM_Total" class="form-control">
                     </div>
                     <div class="col-md-6">
                         <label for="formFile" class="form-label">แนบเอกสารชำระเงิน</label>
-                        <input class="form-control" type="file" id="formFile">
+                        <input class="form-control" type="file" id="formFile" name="PM_Img">
                     </div>
                     <div class="grcode">
                         <div class="img">

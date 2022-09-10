@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+
 <div class="shadow p-3 mb-5 bg-body rounded" style="height: 100px;" display="flex;">
         <div class="container text-center ">
             <div class="row">
@@ -33,16 +35,19 @@
                 </div>
                 <div class="col-md-3 ">
                     <form method="POST" class="hstack gap-4 mt-4">
-                        <label>จำนวนคน</label>
-                        <label class="form-check-label" for="flexCheckDefault">ผู้ใหญ่</label>
-                        <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp">
-                        <label class="form-check-label" for="flexCheckDefault">เด็ก</label>
-                        <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp">
+                        <!-- <label>จำนวนคน</label> -->
+                        <label>ผู้ใหญ่</label>
+                        <input id="number" type="number" value=""class="form-control" name="1" style="width: 100px;">
+                        <label>เด็ก</label>
+                        <input id="number" type="number" value="" class="form-control"  name="1" style="width: 100px;" >
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+
+
 <div class="contrainer">
             <form action="">
                 <div class="payment"><br>
@@ -52,12 +57,8 @@
                         <input type="email" name="" class="form-control">
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label">ชื่อ</label>
+                        <label class="form-label">ชื่อ-นามสกุล</label>
                         <input type="text" name="firstname" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">นามสกุล</label>
-                        <input type="text" name="lastname" class="form-control">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">อีเมล</label>
