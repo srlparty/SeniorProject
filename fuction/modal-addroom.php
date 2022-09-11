@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+<?php
+include "./connectDB.php";
+if (isset($_POST['save-btn'])){
+    $R_ID = $_POST['R_ID'];
+  $R_Price = $_POST['R_Price'];
+  $R_Detail = $_POST['R_Detail'];
+  $R_Type = $_POST['R_Type'];
+
+  if (isset($_POST["R_ID"]) != "" && isset($_POST["R_Type"]) != "" && isset($_POST["R_Price"]) != "" && isset($_POST["R_Detail"]) != "" && isset($R_Img) != "") {
+    mysqli_query($conn, "INSERT INTO room (R_ID, R_Price, R_Detail, R_Type,R_Img) values ('$R_ID', '$R_Price', '$R_Detail', '$R_Type','$R_Img')");
+    
+    echo "<script>alert('เพิ่มข้อมูลสำเร็จ');window.location='manage.php';</script>";
+  }
+} 
+
+?>
 
 
 <!-- Modal -->
@@ -123,8 +139,8 @@
                     </div> -->
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success">บันทึก</button>
-                <button type="button" class="btn btn-danger" name="save-btn">ยกเลิก</button>
+                <button type="button" class="btn btn-success "  name="save-btn" >บันทึก</button>
+                <button type="button" class="btn btn-danger">ยกเลิก</button>
             </div>
         </div>
     </div>

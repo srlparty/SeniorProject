@@ -30,24 +30,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./mybooking.php">การจองของฉัน</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">วิธีการใช้งานเว็บ</a>
-                    </li>
                 </ul>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      ดึงชื่อuser
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-white">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       ดึงชื่อ user
+                    </a>
+                    <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">แก้ไขข้อมูลส่วนตัว</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">ออกจากระบบ</a></li>
+                        <li><a class="dropdown-item" href="./logout.php">ออกจากระบบ</a></li>
                     </ul>
-                </div>
+                </li>
             </div>
-            <!-- <form class="login-regis" >
+        </div>
+        <!-- <form class="login-regis" >
                     <a href="./fuction/auth-login.php" class="login" type="button" >เข้าสู่ระบบ/สมัครสมาชิก<i class='bx bxs-user-circle' style="width: 20px;"></i></a>
                 </form> -->
         </div>
