@@ -22,25 +22,30 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../user/index-user.php">หน้าหลัก</a>
+                        <a class="nav-link" aria-current="page" href="./index-user.php">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../user/pay.php">ชำระเงิน</a>
+                        <a class="nav-link" href="./pay.php">ชำระเงิน</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">การจองของฉัน</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">วิธีการใช้งานเว็บ</a>
+                        <a class="nav-link" href="./mybooking.php">การจองของฉัน</a>
                     </li>
                 </ul>
-
-                <button type="submit" name="logout" class="btn btn-danger  ">ออกจากระบบ</button>
-                </div>
-                <!-- <form class="login-regis" >
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       ดึงชื่อ user
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">แก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a class="dropdown-item" href="./logout.php">ออกจากระบบ</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+        <!-- <form class="login-regis" >
                     <a href="./fuction/auth-login.php" class="login" type="button" >เข้าสู่ระบบ/สมัครสมาชิก<i class='bx bxs-user-circle' style="width: 20px;"></i></a>
                 </form> -->
-            </div>
+        </div>
         </div>
     </nav>
 </body>

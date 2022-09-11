@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Booking Room</title>
-    <link rel="stylesheet" href="./css/mybooking.css">
+    <link rel="stylesheet" href="../css/mybooking.css">
 
     <!-- table -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
 
     <?php
     include "./nav.php";
-    include "../seniorproject/fuction/connectDB.php";
-    include "./fuction/importlink.php"
+    include "../fuction/connectDB.php";
+    include "../fuction/importlink.php"
     ?>
 
 </head>
@@ -40,14 +40,12 @@
             // while ($row = mysqli_fetch_array($query)) { 
             ?>
             <tr>
-                <td>..</td>
+            <td>?php echo $row['BK_ID ']; ?></td>
                 <td>?php echo $row['PM_Name']; ?></td>
-                <td>
-                <div class="detail-booking">
-                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#detail-booking">ดูรายละเอียด</button>
+                <td>   <div class="detail-booking">
+                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#detail-booking">รายละเอียดการจอง</button>
                     </div>
-                </td>
-                <td>..</td>
+                <td>?php echo $row['BK_Status ']; ?></td>
                 <td>
                 <div class="print">
                         <button type="button" class="btn btn-success" style="width: 100px;"><i class='bx bxs-printer'></i>  พิมพ์</button>

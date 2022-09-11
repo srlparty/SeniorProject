@@ -3,18 +3,25 @@
 }
 body{
     /* padding: 20px !important; */
-    margin: 50px 25px 10px 130px !important;
-    
+    /* margin: 50px 25px 10px 130px !important; */
+
+}
+h3{
+    margin-left: 150px;
+   padding: 50px;
 }
 #myTable{
+    text-align: center;
     background-color: #EF774B;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
+    /* -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    
+    -o-border-radius: 10px; */
 }
 .dataTables_wrapper{
     margin-top: 20px;
+}
+.print{
+    text-align: center;
 }
