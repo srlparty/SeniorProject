@@ -1,9 +1,9 @@
 <!-- Modal -->
-<div class="modal fade" id="editroom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">แก้ไขห้อง</h5>
+                <h5 class="modal-title" id="exampleModalLabel">แก้ไขห้องพัก</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <!-- form -->
@@ -118,19 +118,3 @@
         </div>
     </div>
 </div>
-
-
-<!-- โค้ดอัพรูปได้หลายๆรูป -->
-<!-- <?php
-    isset( $_FILES['file'] ) ? $file = $_FILES['file'] : $file = "";
-
-    if( !empty( $file ) ) {
-        for( $i=0; $i<count( $file['name'] ); $i++ ) {
-            $file_name = $file['name'][$i];
-            $file_tmp_name = $file['tmp_name'][$i];
-            if( move_uploaded_file( $file_tmp_name, $file_name )) {
-                echo "<img src='{$file_name}' /><br/>";
-            }
-        }
-    }
-?> -->

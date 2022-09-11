@@ -45,7 +45,7 @@
                 <td>...</td>
                 <td>
                     <div class="edit-delete">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit"><i class='bx bx-edit-alt'></i>แก้ไข</button>
                         <button type="button" class="btn btn-danger"><i class='bx bx-trash' ></i>ลบ</button>
                     </div>
                 </td>
