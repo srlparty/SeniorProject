@@ -144,9 +144,7 @@
                             </div>
                         </div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="subroom ">
-                            จอง
-                        </button>
+                        <a href="./booking.php"><button type="button" class="subroom ">จอง</button></a>
                     </div>
                 </div>
             </div>

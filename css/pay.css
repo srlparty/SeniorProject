@@ -10,6 +10,7 @@ body {
     
 }
 
+
 .contrainer{
     background-color: #f2f2f2;
     width: 1500px;
@@ -28,4 +29,9 @@ body {
 .grcode{
     margin-left: 1000px;
     margin-top: -650px;
+}
+.aa{
+    background-color: #c2c2c2;
+    height: 100px;
+    box-shadow: #f2f2f2;
 }

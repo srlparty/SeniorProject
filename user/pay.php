@@ -37,9 +37,7 @@
         }
     }
     ?>
-
-
-    <div class="shadow p-3 mb-5 bg-body rounded " style="height: 100px;" display="flex;">
+  <div class="aa">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-3 ">
@@ -63,10 +61,14 @@
                         <input id="number" type="number" value="" class="form-control" name="1" style="width: 100px;">
                     </form>
                 </div>
+                <div class="col-md-2">
+                    <form method="POST" class="hstack gap-4 mt-4">
+                        <label>  ดึงข้อมูลจำนวนยอดสรุปที่ต้องชำระเงิน</label>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-
 
 
     <div class="contrainer">
