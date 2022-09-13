@@ -162,10 +162,7 @@
                             <p class="card-t"></i><i class='bx bx-x'></i>ห้องปลอดบุหรี่</p>
                             <p class="card-t"><i class='bx bxs-bowl-rice'></i>ไม่รวมอาหารเช้า</p>
                             <p class="card-t"><i class='bx bxs-dog'></i>ไม่อนุญาตให้นำสัตว์เลี้ยงเข้าห้องพัก</p>
-
-
                             <button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">รายละเอียดเพิ่มเติม</button>
-
                         </div>
                         <div class="col-md-3 ms-auto">
                             <p class="card-t"><b>ราคา</b></p>

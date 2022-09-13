@@ -36,7 +36,7 @@
                        ดึงชื่อ user
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">แก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a class="dropdown-item" href="./editinfo.php">แก้ไขข้อมูลส่วนตัว</a></li>
                         <li><a class="dropdown-item" href="./logout.php">ออกจากระบบ</a></li>
                     </ul>
                 </li>

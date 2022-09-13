@@ -48,7 +48,7 @@
         </div>
         <div class="col-12 ">
             <div class="forgetpass">
-                <a class="form-check-label" for="gridCheck">
+                <a href="../fuction/forgotpass.php"  class="form-check-label" for="gridCheck">
                     ลืมรหัสผ่าน
                 </a>
             </div>
