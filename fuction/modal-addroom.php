@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    include "./connectDB.php";
+    include "../fuction/connectDB.php";
     if (isset($_POST['save-btn'])) {
         $R_ID = $_POST['R_ID'];
         $R_Price = $_POST['R_Price'];
