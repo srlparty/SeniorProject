@@ -13,14 +13,17 @@
     include "../fuction/connectDB.php";
     if (isset($_POST['save-btn'])) {
         $R_ID = $_POST['R_ID'];
-        $R_Price = $_POST['R_Price'];
-        $R_Detail = $_POST['R_Detail'];
         $R_Type = $_POST['R_Type'];
+        $R_Bed = $_POST['R_Bed'];
+        $R_Detail = $_POST['R_Detail'];
+        $R_Typecount = $_POST['R_Typecount'];
+        $R_Price = $_POST['R_Price'];
+        $R_Img = $_POST['R_Img'];
 
-        if (isset($_POST["R_ID"]) != "" && isset($_POST["R_Type"]) != "" && isset($_POST["R_Price"]) != "" && isset($_POST["R_Detail"]) != "" && isset($R_Img) != "") {
-            mysqli_query($conn, "INSERT INTO room (R_ID, R_Price, R_Detail, R_Type,R_Img) values ('$R_ID', '$R_Price', '$R_Detail', '$R_Type','$R_Img')");
+        if (isset($_POST["R_ID"]) != "" && isset($_POST["R_Type"])  != "" && isset($_POST["R_Bed"]) != "" && isset($_POST["R_Detail"]) != "" && isset($_POST["R_Typecount"]) != "" && isset($_POST["R_Price"]) != "" && isset($R_Img) != "") {
+            mysqli_query($conn, "INSERT INTO room (R_ID, R_Type, R_Bed, R_Detail, R_Typecount, R_Price, R_Img) values ('$R_ID', '$R_Type','$R_Bed', '$R_Detail','$R_Typecount','$R_Price' ,'$R_Img')");
 
-            echo "<script>alert('เพิ่มข้อมูลสำเร็จ');window.location='manage.php';</script>";
+            echo "<script>alert('เพิ่มข้อมูลสำเร็จ');window.location='../admin/manage.php';</script>";
         }
     }
 

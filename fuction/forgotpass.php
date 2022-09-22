@@ -59,7 +59,7 @@
         <div class="g-3  col-md-12 text-center">
             <button type="submit" name="signup" class="btn btn-primary w-50 ">ยืนยัน</button>
         </div>
-        <a href="../fuction/auth-login.php" class="text-center">เป็นสมาชิกอยู่แล้ว</a>
+        <a href="../fuction/auth-login.php" class="text-center">เข้าสู่ระบบ</a>
     </form>
 </body>
 

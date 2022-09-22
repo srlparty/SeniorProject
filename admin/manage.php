@@ -35,25 +35,34 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>..</td>
-                <td>..</td>
-                <td>..</td>
-                <td>..</td>
-                <td>..</td>
-                <td>...</td>
-                <td>...</td>
-                <td>
-                    <div class="edit-delete">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit"><i class='bx bx-edit-alt'></i>แก้ไข</button>
-                        <button type="button" class="btn btn-danger"><i class='bx bx-trash' ></i>ลบ</button>
-                    </div>
-                </td>
-            </tr>
+            <?php
+            include('../fuction/connectDB.php');
+            $query = mysqli_query($conn, "SELECT * FROM room");
+            while ($row = mysqli_fetch_array($query)) {
+            ?>
+                <tr>
+                    <td><?php echo $row['R_ID']; ?></td>
+                    <td><?php echo $row['R_Type']; ?></td>
+                    <td><?php echo $row['R_Bed']; ?></td>
+                    <td><?php echo $row['R_Detail']; ?></td>
+                    <td><?php echo $row['R_Typecount']; ?></td>
+                    <td><?php echo $row['R_Price']; ?></td>
+                    <td><?php echo $row['R_Img']; ?></td>
+                    <td>
+                        <div class="edit-delete">
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit"><i class='bx bx-edit-alt'></i>แก้ไข</button>
+                            <button type="button" class="btn btn-danger"><i class='bx bx-trash'></i>ลบ</button>
+                        </div>
+                    </td>
+                </tr>
+            <?php
+            }
+
+            ?>
         </tbody>
     </table>
-    <?php require '../fuction/modal-addroom.php' ;
-    require '../fuction/modal-editroom-1.php'?>
+    <?php require '../fuction/modal-addroom.php';
+    require '../fuction/modal-editroom-1.php' ?>
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();

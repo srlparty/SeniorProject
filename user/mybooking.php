@@ -33,15 +33,14 @@
             </tr>
         </thead>
         <tbody>
-            <?php
-            // include "./fuction/connectDB.php"
-
-            // $query = mysqli_query($conn, "SELECT * FROM payment");
-            // while ($row = mysqli_fetch_array($query)) { 
+        <?php
+            include('../fuction/connectDB.php');
+            $query = mysqli_query($conn, "SELECT * FROM payment ");
+            while ($row = mysqli_fetch_array($query)) {
             ?>
             <tr>
             <td>?php echo $row['BK_ID ']; ?></td>
-                <td>?php echo $row['PM_Name']; ?></td>
+            <td><?php echo $row['PM_Name']; ?></td>
                 <td>   <div class="detail-booking">
                     <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#detail-booking">รายละเอียดการจอง</button>
                     </div>
@@ -51,7 +50,11 @@
                         <button type="button" class="btn btn-success" style="width: 100px;"><i class='bx bxs-printer'></i>  พิมพ์</button>
                     </div>
                 </td>
-            
+                </tr>
+            <?php
+            }
+
+            ?>
             </tr>
         </tbody>
     </table>
