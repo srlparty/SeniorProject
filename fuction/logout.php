@@ -1,6 +1,5 @@
-<?php  
-session_start();
-unset($_SESSION['user_login']);
-unset($_SESSION['admin_login']);
-header('location: ../index.php')
-?>
+<?php
+if (session_start()&&session_destroy()){
+include "./1-import-link.php";
+    echo "<script>logoutsuccess(); </script> ";
+}

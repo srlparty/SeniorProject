@@ -19,7 +19,7 @@
 
     <form class="row g-3 register " action="./signin_db.php" method="POST">
         <h2 class="text-center" style="margin-top: 50px ;">เข้าสู่ระบบ</h2>
-
+        
         <?php if (isset($_SESSION['error'])) { ?>
             <div class="alert alert-danger g-3" role="alert">
                 <?php
@@ -38,23 +38,28 @@
             </div>
         <?php } ?>
 
-        <label for="input" class="form-label">อีเมล</label>
-        <input type="email" class="form-control" id="email" name="email" required>
+
+        <div class="col-12">
+            <label for="input" class="form-label">อีเมล</label>
+            <input type="text" class="form-control" id="email" name="email" required>
         </div>
         <div class="col-12">
             <label for="inputpassword" class="form-label">รหัสผ่าน</label>
-            <input type="password" class="form-control" id="us_password" name="us_password" required>
+            <input type="password" class="form-control" id="password" name="password" required>
 
         </div>
         <div class="col-12 ">
             <div class="forgetpass">
-                <a href="../fuction/forgotpass.php"  class="form-check-label" for="gridCheck">
+                <a class="form-check-label" for="gridCheck">
                     ลืมรหัสผ่าน
                 </a>
             </div>
         </div>
         <div class="g-3  col-md-12 text-center">
+
             <button type="submit" name="signin" class="btn btn-primary w-50 ">เข้าสู่ระบบ</button>
+            <!-- <a href="..."type="submit" name="login-btn" class="btn btn-primary w-50 ">ยืนยัน</a> -->
+
         </div>
         <a href="../fuction/auth-regis.php" class="text-center">สมัครสมาชิก</a>
     </form>

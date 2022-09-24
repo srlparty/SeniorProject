@@ -6,9 +6,9 @@ if (isset($_POST['signup'])) {
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $email = $_POST['email'];
-    $us_password = $_POST['us_password'];
+    $password = $_POST['password'];
     $cf_password = $_POST['cf_password'];
-
+    $urole = 'user';
 
     if (empty($firstname)) {
         $_SESSION['error'] = 'กรุณากรอกชื่อ';
@@ -22,16 +22,16 @@ if (isset($_POST['signup'])) {
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['error'] = 'รูปแบบอีเมลไม่ถูกต้อง';
         header("location: auth-regis.php");
-    } else if (empty($us_password)) {
+    } else if (empty($password)) {
         $_SESSION['error'] = 'กรุณากรอกรหัสผ่าน';
         header("location: auth-regis.php");
-    } else if (strlen($_POST['us_password']) > 20 || strlen($_POST['us_password']) < 5) {
+    } else if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
         $_SESSION['error'] = 'รหัสผ่านต้องมีความยาวมากกว่า 5 ถึง 20 ตัวอักษร';
         header("location: auth-regis.php");
     } else if (empty($cf_password)) {
         $_SESSION['error'] = 'กรุณายืนยันรหัสผ่าน';
         header("location: auth-regis.php");
-    } else if ( $us_password != $cf_password ) {
+    } else if ( $password != $cf_password ) {
         $_SESSION [ ' error ' ] = 'รหัสผ่านไม่ตรงกัน';
         header ( " location : auth-regis.php" ) ;
     } else {
@@ -47,15 +47,15 @@ if (isset($_POST['signup'])) {
             $_SESSION['warning'] = "มีอีเมลนี้อยู่ในระบบแล้ว <a href='auth-login.php'>คลิกที่นี่</a>เพื่อเข้าสู่ระบบ";
             header("location: auth-regis.php");
         } else if (!isset($_SESSION['error'])){
-            $passwordHash = password_hash($us_password, PASSWORD_DEFAULT);
+            $passwordHash = password_hash($password, PASSWORD_DEFAULT);
             $stmt = $conn->prepare (
-                "INSERT INTO user(firstname, lastname, email, us_password)
-                VALUES(:firstname, :lastname, :email, :us_password)");
+                "INSERT INTO user(firstname, lastname, email, password, urole)
+                VALUES(:firstname, :lastname, :email, :password, :urole)");
             $stmt->bindParam(":firstname", $firstname);
             $stmt->bindParam(":lastname", $lastname);
             $stmt->bindParam(":email", $email);
-            $stmt->bindParam(":us_password", $passwordHash);
-          
+            $stmt->bindParam(":password", $passwordHash);
+            $stmt->bindParam(":urole", $urole);
             $stmt->execute();
             $_SESSION['success'] = "สมัครสมาชิกเรียบร้อยแล้ว <a href='auth-login.php' class='alert-link'>คลิกที่นี่เพื่อเข้าสู่ระบบ</a>";
             header("location: auth-regis.php");

@@ -14,7 +14,7 @@
     if (isset($_POST['save-btn'])) {
         $R_ID = $_POST['R_ID'];
         $R_Type = $_POST['R_Type'];
-        $R_Bed = $_POST['R_Bed'];
+        $R_Bed = $_POST['R_Bed']; //ดึงเตียงคุ่ เดียว
         $R_Detail = $_POST['R_Detail'];
         $R_Typecount = $_POST['R_Typecount'];
         $R_Price = $_POST['R_Price'];

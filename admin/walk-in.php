@@ -18,7 +18,7 @@
     <h2><b>การจอง Walk in</b></h2>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary addroom" style="background-color: #EF774B; border:#EF774B;" data-bs-toggle="modal" data-bs-target="#addroom">
-        เพิ่มห้องพัก
+        จองห้องพัก
     </button>
 
     <table id="myTable" class="display" style="width: 100%;">
@@ -30,30 +30,37 @@
                 <th>สิ่งอำนวยความสะดวก</th>
                 <th>จำนวนผู้เข้าพัก</th>
                 <th>ราคา</th>
-                <th>รูปภาพ</th>
                 <th>จัดการ</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>..</td>
-                <td>..</td>
-                <td>..</td>
-                <td>..</td>
-                <td>..</td>
-                <td>...</td>
-                <td>...</td>
-                <td>
-                    <div class="edit-delete">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
-                        <button type="button" class="btn btn-danger"><i class='bx bx-trash' ></i>ลบ</button>
-                    </div>
-                </td>
-            </tr>
+            <?php
+            include('../fuction/connectDB.php');
+            $query = mysqli_query($conn, "SELECT * FROM room");
+            while ($row = mysqli_fetch_array($query)) {
+            ?>
+                <tr>
+                    <td><?php echo $row['R_ID']; ?></td>
+                    <td><?php echo $row['R_Type']; ?></td>
+                    <td><?php echo $row['R_Bed']; ?></td>
+                    <td><?php echo $row['R_Detail']; ?></td>
+                    <td><?php echo $row['R_Typecount']; ?></td>
+                    <td><?php echo $row['R_Price']; ?></td>
+                    <td>
+                        <div class="edit-delete">
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
+                            <button type="button" class="btn btn-danger"><i class='bx bx-trash'></i>ลบ</button>
+                        </div>
+                    </td>
+                </tr>
+            <?php
+            }
+
+            ?>
         </tbody>
     </table>
-    <?php require '../fuction/modal-addroom.php' ;
-    require '../fuction/modal-editroom.php'?>
+    <?php require '../fuction/modal-addroom.php';
+    require '../fuction/modal-editroom.php' ?>
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();
