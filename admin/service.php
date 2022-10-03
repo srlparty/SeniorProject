@@ -31,10 +31,16 @@
             </tr>
         </thead>
         <tbody>
+        <?Php
+            require_once('../fuction/connectDB.php');
+            $result = $conn->prepare("SELECT * FROM service");
+            $result->execute();
+            for($i=0; $row = $result->fetch(); $i++){
+        ?>
             <tr>
-                <td>..</td>
-                <td>...</td>
-                <td>...</td>
+                <td><?php echo $row['SV_ID']; ?></td>
+                <td><?php echo $row['SV_Name']; ?></td>
+                <td><?php echo $row['SV_Price']; ?></td>
                 <td>
                     <div class="edit-delete">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editser"><i class='bx bx-edit-alt'></i>แก้ไข</button>
@@ -42,6 +48,7 @@
                     </div>
                 </td>
             </tr>
+            <?php } ?>
         </tbody>
     </table>
     <?php require '../fuction/modal-addser.php' ;

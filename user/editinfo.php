@@ -17,6 +17,16 @@
 </head>
 
 <body>
+
+<?php
+if (isset($_GET['US_ID'])) { 
+  $conn = mysqli_connect("localhost", "root", "", "villadepanta");
+  $all_user = "SELECT * FROM user WHERE (US_ID = $US_ID) ";
+  $result = mysqli_query($conn, $all_user);
+  $row = mysqli_fetch_array($result);
+  extract($row);
+}
+?> 
     <img src="../img/bbg.png" alt="">
     <form class="row g-3 register " action="./signup_db.php" method="POST">
         <h2 class="text-center" style="margin-top: 50px ;">แก้ไขมูลส่วนตัว</h2>
@@ -48,21 +58,39 @@
         <?php } ?>
         <div class="col-md-6">
             <label class="form-label">ชื่อ</label>
-            <input type="text" name="firstname" class="form-control">
+            <input type="text" name="firstname" class="form-control" value="<?php echo $row['firstname']; ?>">
         </div>
         <div class="col-md-6">
             <label class="form-label">นามสกุล</label>
-            <input type="text" name="lastname" class="form-control">
+            <input type="text" name="lastname" class="form-control"  value="<?php echo $row['lastname'];?>">
         </div>
         <div class="col-12">
             <label class="form-label">อีเมล</label>
-            <input type="email" name="email" class="form-control">
+            <input type="email" name="email" class="form-control"  value="<?php echo $row['email'];?>">
         </div>
         <div class="g-3  col-md-12 text-center">
             <button type="submit" name="signup" class="btn btn-primary w-50 ">ยืนยัน</button>
         </div>
         <a href="../user/index-user.php" class="text-center">กลับสู่หน้าหลัก</a>
     </form>
+
+    <?php
+    if (isset($_POST['signup'])) {
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $email = $_POST['email'];
+      
+
+        if (isset($_POST["firstname"]) != "" && isset($_POST["lastname"]) != "" && isset($_POST["email"]) !=  "")  {
+            $sqlupdate = "UPDATE room SET firstname='$firstname', lastname='$lastname', email='$email' WHERE US_ID = '$US_ID' ";
+            mysqli_query($conn, $sqlupdate);
+              echo "<script>window.location='./editinfo.php';</script>";
+            }
+            else {
+                echo "<script>alert('เกิดข้อผิดพลาดกรุณาลองอีกครั้ง);</script>";
+            }
+        }
+    ?>
 </body>
 
 </html

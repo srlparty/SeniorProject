@@ -34,11 +34,13 @@
             </tr>
         </thead>
         <tbody>
-            <?php
-            include('../fuction/connectDB.php');
-            $query = mysqli_query($conn, "SELECT * FROM room");
-            while ($row = mysqli_fetch_array($query)) {
-            ?>
+        <?Php
+            require_once('../fuction/connectDB.php');
+            $result = $conn->prepare("SELECT * FROM room");
+            $result->execute();
+            for($i=0; $row = $result->fetch(); $i++){
+        ?>
+
                 <tr>
                     <td><?php echo $row['R_ID']; ?></td>
                     <td><?php echo $row['R_Type']; ?></td>

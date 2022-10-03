@@ -35,16 +35,19 @@
         <tbody>
         <?php
             include('../fuction/connectDB.php');
-            $query = mysqli_query($conn, "SELECT * FROM payment ");
-            while ($row = mysqli_fetch_array($query)) {
-            ?>
+            require_once('../fuction/connectDB.php');
+            $result = $conn->prepare("SELECT * FROM payment , booking ");
+            $result->execute();
+            for($i=0; $row = $result->fetch(); $i++){
+        ?>
+
             <tr>
-            <td>?php echo $row['BK_ID ']; ?></td>
+            <td><?php echo $row['BK_ID']; ?></td>
             <td><?php echo $row['PM_Name']; ?></td>
                 <td>   <div class="detail-booking">
                     <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#detail-booking">รายละเอียดการจอง</button>
                     </div>
-                <td>?php echo $row['BK_Status ']; ?></td>
+                <td><?php echo $row['BK_Status']; ?></td>
                 <td>
                 <div class="print">
                         <button type="button" class="btn btn-success" style="width: 100px;"><i class='bx bxs-printer'></i>  พิมพ์</button>

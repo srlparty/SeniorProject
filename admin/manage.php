@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +13,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
 
     <link rel="stylesheet" href="../css/manage.css">
-    <?php include "../admin/nav-admin.php";
-    include "../fuction/importlink.php" ?>
+    <?php
+    include "../admin/nav-admin.php";
+    include "../fuction/importlink.php";
+    include "../fuction/connectDB.php";
+
+    ?>
 </head>
 
 <body>
@@ -20,6 +27,7 @@
     <button type="button" class="btn btn-primary addroom" style="background-color: #EF774B; border:#EF774B;" data-bs-toggle="modal" data-bs-target="#addroom">
         เพิ่มห้องพัก
     </button>
+
 
     <table id="myTable" class="display" style="width: 100%;">
         <thead>
@@ -35,34 +43,33 @@
             </tr>
         </thead>
         <tbody>
-            <?php
-            include('../fuction/connectDB.php');
-            $query = mysqli_query($conn, "SELECT * FROM room");
-            while ($row = mysqli_fetch_array($query)) {
-            ?>
-                <tr>
-                    <td><?php echo $row['R_ID']; ?></td>
-                    <td><?php echo $row['R_Type']; ?></td>
-                    <td><?php echo $row['R_Bed']; ?></td>
-                    <td><?php echo $row['R_Detail']; ?></td>
-                    <td><?php echo $row['R_Typecount']; ?></td>
-                    <td><?php echo $row['R_Price']; ?></td>
-                    <td><?php echo $row['R_Img']; ?></td>
-                    <td>
-                        <div class="edit-delete">
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edit"><i class='bx bx-edit-alt'></i>แก้ไข</button>
-                            <button type="button" class="btn btn-danger"><i class='bx bx-trash'></i>ลบ</button>
-                        </div>
-                    </td>
-                </tr>
-            <?php
-            }
+        <?Php
+            require_once('../fuction/connectDB.php');
+            $result = $conn->prepare("SELECT * FROM room");
+            $result->execute();
+            for($i=0; $row = $result->fetch(); $i++){
+        ?>
 
-            ?>
+            <tr>
+                <td><?php echo $row['R_ID']; ?></td>
+                <td><?php echo $row['R_Type']; ?></td>
+                <td><?php echo $row['R_Bed']; ?></td>
+                <td><?php echo $row['R_Detail']; ?></td>
+                <td><?php echo $row['R_Typecount']; ?></td>
+                <td><?php echo $row['R_Price']; ?></td>
+                <td><?php echo $row['R_Img']; ?></td>
+                <td>
+                    <div class="edit-delete">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
+                        <button type="button" class="btn btn-danger"><i class='bx bx-trash'></i>ลบ</button>
+                    </div>
+                </td>
+            </tr>
+            <?php } ?>
         </tbody>
     </table>
     <?php require '../fuction/modal-addroom.php';
-    require '../fuction/modal-editroom-1.php' ?>
+            require '../fuction/modal-editroom-1.php' ?>
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();
