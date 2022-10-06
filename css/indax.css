@@ -1,22 +1,47 @@
-:root {
-    --orange: #ff8331;
+* {
+    font-family: 'Mitr', sans-serif;
 }
+
+:root {
+    --orange: #EF774B;
+}
+
 
 .image-hotel {
     height: 50vh;
     width: 100%;
 }
+.pic-cafa
+{
+    border-radius: 5px;
+    margin-top: 40px;
+    height: 500px;
+    width: 800px;
+    margin-left: 800px;
+}
+.colpic{
+    margin-top: 40px;
+margin-left: 150px;
+}
 
+h5{
+    color: #000;
+
+}
+
+/* container Search */
 .container {
     position: absolute;
     background-color: #fff;
-    border: 1px solid #ff8331;
     width: 100%;
     height: fit-content;
     top: 54vh;
     left: 10%;
-    border-radius: 10px;
+    border-radius: 20px;
     z-index: 1;
+    box-shadow: -1px 6px 5px #F4F6F6,
+        0px -1px 4px;
+
 }
 
 .col-md-3 {
@@ -24,13 +49,110 @@
 }
 
 p {
-    color: #ff8331;
+    color: #EF774B;
+    font-size: 18px;
+   
 }
 
 .btnsearch {
     border-left: 1px solid rgb(221, 221, 221);
-    background-color: #ff8331;
+    background-color: #EF774B;
     color: #fff;
     border: none;
-    border-radius: 0px 10px 10px  0px; 
+    border-radius: 0px 10px 10px 0px;
+}
+
+h3 {
+    
+    padding-top: 40px;
+    margin-left: 155px;
+}
+/* card public relations */
+h2{
+    padding-top: 120px;
+    margin-left: 750px;
+}
+.news{
+   width: 50%;
+   margin-top: 50px;
+   text-align: center;
+   font-size: 22px;
+   margin-left: 25%;
+}
+
+
+/* card room */
+.card {
+    margin-top: 30px;
+    margin-left: 200px;
+    /*text-align: center;
+    */width: 1300px;
+    height: 300px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: -8px 8px 16px #f9f9f9,        8px -8px 16px #f9f9f9;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.room-detail{
+    padding: 20px 50px !important;
+    height: 200px;
+}
+
+.room {
+    width: 500px;
+    height: 250px;
+}
+.title{
+    color: #000;
+    margin-top: -40px;
+    text-align: center;
+
+}
+.card-t{
+    color: #000;
+    font-size: 16px;
+}
+.img-fluid {
+    height: 100%;
+
+}
+
+.subroom {
+    
+    width: 180px;
+    height: 50px;
+    margin-left: 600px;
+    border-radius: 10px;
+    border: 1px solid #EF774B;
+    background: #EF774B;
+    color: #fff;
+}
+
+
+/* mapvilla */
+.Villa{
+    margin-top: 50px;
+    background-color: #E5E7E9;
+    height: 600px;
+   
+}
+.mapvilla{
+    margin-top: 20px;
+    margin-left: 155px;
+}
+.nearbyplaces{
+    margin-top: -420px;
+    margin-left: 800px;
+}
+
+/* About the hotel */
+.card-img{
+    margin-top: 0px;
+    height: 450px;
+}
+.abouthotel{
+    color: #000;
 }

@@ -15,24 +15,24 @@
     
     <nav class="navbar navbar-expand-lg  nav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./img/logovilla.PNG" alt="" width="80px" height="60px"></a>
+            <a class="navbar-brand" href="#"><img src="./img/villalogo.PNG" alt="" width="80px" height="60px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">หน้าหลัก</a>
+                        <a class="nav-link" aria-current="page" href="./index.php">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ชำระเงิน</a>
+                        <a class="nav-link" href="./payment-guest.php">ชำระเงิน</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ">Disabled</a>
+                        <a class="nav-link" href="./mybooking-guest.php">การจองของฉัน</a>
                     </li>
                 </ul>
                 <form class="login-regis" >
-                    <a href="" class="login" type="button" >เข้าสู่ระบบ/สมัครสมาชิก<i class='bx bxs-user-circle' style="width: 20px;"></i></a>
+                    <a href="./fuction/auth-login.php" class="login" type="button" >เข้าสู่ระบบ/สมัครสมาชิก<i class='bx bxs-user-circle' style="width: 20px;"></i></a>
                 </form>
             </div>
         </div>

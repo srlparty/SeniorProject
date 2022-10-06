@@ -1,5 +1,8 @@
+body{
+    
+}
 .nav{
-    background: #fa9b78;
+    background: #fff;
 }
 .d-flex
 {
@@ -8,16 +11,16 @@
 .login{
     padding: 5px 25px;
     text-align: center;
-    background-color: #fff;
-    color: #000;
+    background-color: #EF774B;
+    color: #fff;
     width: fit-content;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-right: 50px;
     text-decoration: none;
 }
 
 .nav-item .nav-link{
     margin-left: 30px;
-    color: #fff !important;
+    color: #EF774B !important;
 }

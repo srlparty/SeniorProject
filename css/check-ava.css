@@ -1,0 +1,28 @@
+* {
+    font-family: 'Mitr', sans-serif;
+}
+body{
+    padding: 20px !important;
+    margin: 30px 25px 10px 130px !important;
+}
+.card-group{
+    width: 1510px;
+}
+.card{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+#myTable{
+    background-color: #EF774B;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    justify-content: center;
+}
+.dataTables_wrapper{
+    margin-top: 50px;
+}
+
