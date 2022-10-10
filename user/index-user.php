@@ -122,12 +122,12 @@
 
 <h3>ห้องพัก</h3>
         <div class="card rd mb-3 ">
-            <div class="row g-0">
-                <div class="col-md-4">
+            <div class="row g-2">
+                <div class="col-md-3">
                     <img src="../img/bgvilla.png" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
-                    <div class="card-body room-detail" style="height: 350px;">
+                    <div class="card-body room-detail" style="height: 280px;">
                         <h3 class="title"><b>ใส่โค้ดประเภทห้อง เตียง</b></h3>
                         <div class="row">
                             <div class="col-md-6">
@@ -138,19 +138,18 @@
                                 <button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">รายละเอียดเพิ่มเติม</button>
 
                             </div>
-                            <div class="col-md-3 ms-auto">
+                            <div class="col-md-2 ms-auto">
                                 <p class="card-t"><b>ราคา</b></p>
-                                <p class="card-t">
-                                <h1>ใส่โค้ดราคา</h1>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Button trigger modal -->
-                        <a href="./booking.php"><button type="button" class="subroom ">จอง</button></a>
-                    </div>
+                                <p class="card-t">ใส่โค้ดราคา</p> 
+                                <br>
+                                <br>
+                                <br>
+                                <a href="./booking.php"><button type="button" class="card-t " style="background: #EF774B; width: 120px; height: 40px; border-radius: 10px; color:white;border: 1px solid #EF774B;  ">จอง</button></a> 
+                    </div> 
+                  </div>  
                 </div>
             </div>
-          
+           </div>
        		</div>
 
 

@@ -63,8 +63,7 @@ p {
 }
 
 h3 {
-
-    padding-top: 40px;
+   
     margin-left: 155px;
 }
 
@@ -76,7 +75,7 @@ h2 {
 
 
 .news {
-    padding: 20px;
+    padding: 5%;
     max-width: 50%;
     margin-top: 50px;
     text-align: center;
@@ -91,10 +90,9 @@ h2 {
 
 /* card room */
 .card {
-    margin-top: 30px;
-    margin-left: 200px;
-    max-width: 100%;
-    height: 300px;
+    margin-top: 5%;
+    left: 12vh;
+    max-width: 90%;
     border-radius: 30px;
     background: #e0e0e0;
     box-shadow: -8px 8px 16px #f9f9f9, 8px -8px 16px #f9f9f9;
@@ -116,7 +114,7 @@ h2 {
 
 .title {
     color: #000;
-    margin-top: -40px;
+    margin-top: -10px;
     text-align: center;
 
 }
@@ -132,10 +130,10 @@ h2 {
 }
 
 .subroom {
-
-    width: 180px;
+   
+    width: 150px;
     height: 50px;
-    margin-left: 600px;
+    margin-left: 80px;
     border-radius: 10px;
     border: 1px solid #EF774B;
     background: #EF774B;
