@@ -115,10 +115,12 @@
         </div>
     </div>
     </div>
-
+    
 
         <!-- card room-->
-        <h3>ห้องพัก</h3>
+        
+
+<h3>ห้องพัก</h3>
         <div class="card rd mb-3 ">
             <div class="row g-0">
                 <div class="col-md-4">
@@ -148,7 +150,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+          
+       		</div>
+
+
 
         <!-- map -->
         <div class="Villa">
@@ -175,8 +180,7 @@
         </div>
 
         <?php require '../fuction/modal-user.php' ?>
-
-
+   
     </body>
 
 </html>

@@ -16,11 +16,7 @@
 
 <body>
     <?php
-  include "./fuction/connectDB.php";
-  session_start();
-
-
-  
+  include "../fuction/connectDB.php";
     if (isset($_POST["save-btn"])) {
         $PM_ID = $_POST['PM_ID'];
         $PM_Idcard = $_POST['PM_Idcard'];
