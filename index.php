@@ -89,12 +89,13 @@
     </div>
 
     <!-- card public relations -->
-    <h2>ยินดีต้อนรับ</h2>
-    <div class="card-body news">
-        ที่พักบรรยากาศอบอุ่น บ้านสวน ริมคลองท้องทุ่งนา บรรยากาศแห่งการพักผ่อน ที่ห้อมล้อมด้วยธรรมชาติ บรรยากาศแห่งความสุข และผ่อนคลาย ที่ "วิลล่าเดอพันตา" ภูเรือ
-    </div><br>
+  
+    <div class="news">
+          <h2>ยินดีต้อนรับ</h2> 
+       <ul> ที่พักบรรยากาศอบอุ่น บ้านสวน ริมคลองท้องทุ่งนา บรรยากาศแห่งการพักผ่อน ที่ห้อมล้อมด้วยธรรมชาติ บรรยากาศแห่งความสุข และผ่อนคลาย ที่ "วิลล่าเดอพันตา" ภูเรือ</ul>
+</div>
 
-    <!-- รอบๆห้องพัก -->
+    <!-- รอบๆห้องพัก
     <div class="row g-0 bg-light position-relative">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -144,7 +145,7 @@
             </div>
         </div>
     </div>
-    </div>
+    </div> -->
 
     <!-- card room-->
     <h3>ห้องพัก</h3>

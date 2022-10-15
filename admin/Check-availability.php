@@ -11,7 +11,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
 
     <link rel="stylesheet" href="../css/check-ava.css">
-    <?php include "../admin/nav-admin.php";
+    <?php
+    include "../admin/nav-admin.php";
+    include "../fuction/connectDB.php";
     include "../fuction/importlink.php" ?>
 </head>
 
@@ -48,33 +50,38 @@
             <tr>
                 <th>เลขห้อง</th>
                 <th>ประเภทห้อง</th>
-                <th>สถานะห้อง</th>
+                <th>สถานะ</th>
                 <th>จัดการ</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>..</td>
-                <td>...</td>
-                <td>
-                    <select class="form-select" aria-label="Default select">
-                        <option selected>เลือกสถานะห้อง</option>
-                        <option value="1">ว่าง</option>
-                        <option value="2">เต็ม</option>
-                        <option value="3">กำลังทำความสะอาด</option>
-                        <option value="3">ชำรุดกำลังซ่อม</option>
-                    </select>
-                </td>
-                <td>
-                    <div class="edit-delete">
-                        <button type="button" class="btn btn-success"><i class='bx bx-edit-alt'></i>บันทึก</button>
-                    </div>
-                </td>
-            </tr>
+            <?Php
+            require_once('../fuction/connectDB.php');
+            $result = $conn->prepare("SELECT * FROM room ");
+            $result->execute();
+            for ($i = 0; $row = $result->fetch(); $i++) {
+            ?>
+                <tr>
+                <td><?php echo $row['R_ID']; ?></td>
+                <td><?php echo $row['R_Type']; ?></td>
+                    <td>
+                        <select class="form-select" aria-label="Default select">
+                            <option selected>เลือกสถานะห้อง</option>
+                            <option value="1">ว่าง</option>
+                            <option value="2">เต็ม</option>
+                            <option value="3">กำลังทำความสะอาด</option>
+                            <option value="3">ชำรุดกำลังซ่อม</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="edit-delete">
+                            <button type="button" class="btn btn-success"><i class='bx bx-edit-alt'></i>บันทึก</button>
+                        </div>
+                    </td>
+                </tr>
+            <?php } ?>
         </tbody>
     </table>
-    <?php require '../fuction/modal-addroom.php';
-    require '../fuction/modal-editroom.php' ?>
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();

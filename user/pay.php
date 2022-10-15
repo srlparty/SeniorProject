@@ -16,11 +16,7 @@
 
 <body>
     <?php
-  include "./fuction/connectDB.php";
-  session_start();
-
-
-  
+  include "../fuction/connectDB.php";
     if (isset($_POST["save-btn"])) {
         $PM_ID = $_POST['PM_ID'];
         $PM_Idcard = $_POST['PM_Idcard'];
@@ -33,12 +29,7 @@
         $PM_Total = $_POST['PM_Total'];
         $PM_Img = 'img/' . $PM_Img;
 
-        if (isset($_POST["PM_ID"]) != "" && isset($_POST["PM_Idcard"]) != "" && isset($_POST["PM_Name"]) != "" && isset($_POST["PM_Email"]) != "" && isset($_POST["PM_Tel"])!= "" && isset($_POST["PM_Date"])!= "" &&  isset($_POST["PM_Time"])!= "" &&  isset($_POST["PM_Bank"])!= "" &&  isset($_POST["PM_Total"])!= "" &&   isset($PM_Img) != "") {
-            mysqli_query($conn, "INSERT INTO payment (PM_ID, PM_Idcard, PM_Name, PM_Email,PM_Tel,PM_Date,PM_Time,PM_Bank,PM_Total,PM_Img) 
-            values ('$PM_ID', '$PM_Idcard', '$PM_Name', '$PM_Email','$PM_Tel','$PM_Date','$PM_Time','$PM_Bank','$PM_Total','$PM_Img')");
-
-            echo "<script>alert('กรอกข้อมูลสำเร็จ');window.location='./pay.php';</script>";
-        }
+       
     }
     ?>
   <div class="aa">

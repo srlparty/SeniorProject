@@ -8,10 +8,6 @@
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        <label for="R_ID" class="form-label">ลำดับ</label>
-                        <input type="text" class="form-control" id="R_ID" name="R_ID" aria-describedby="emailHelp" placeholder="กรุณาระบุลำดับ">
-                    </div>
-                    <div class="mb-3">
                         <label for="R_ID" class="form-label">บริการเสริม</label>
                         <input type="text" class="form-control" id="R_ID" name="R_ID" aria-describedby="emailHelp" placeholder="กรุณาระบุบริการเสริม">
                     </div>

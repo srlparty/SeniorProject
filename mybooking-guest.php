@@ -33,11 +33,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php
-            include('./fuction/connectDB.php');
-            $query = mysqli_query($conn, "SELECT * FROM payment ");
-            while ($row = mysqli_fetch_array($query)) {
-            ?>
+           
             <tr>
             <td>?php echo $row['BK_ID ']; ?></td>
             <td>...</td>
@@ -53,10 +49,7 @@
                     </div>
                 </td>
                 </tr>
-            <?php
-            }
-
-            ?>
+           
             </tr>
         </tbody>
     </table>

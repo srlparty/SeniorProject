@@ -34,7 +34,7 @@
         </thead>
         <tbody>
         <?php
-            include('../fuction/connectDB.php');
+           
             require_once('../fuction/connectDB.php');
             $result = $conn->prepare("SELECT * FROM payment , booking ");
             $result->execute();
@@ -46,6 +46,7 @@
             <td><?php echo $row['PM_Name']; ?></td>
                 <td>   <div class="detail-booking">
                     <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#detail-booking">รายละเอียดการจอง</button>
+                    
                     </div>
                 <td><?php echo $row['BK_Status']; ?></td>
                 <td>

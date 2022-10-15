@@ -50,7 +50,7 @@
                     <td><?php echo $row['R_Price']; ?></td>
                     <td>
                         <div class="edit-delete">
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editwalkinroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
                             <button type="button" class="btn btn-danger"><i class='bx bx-trash'></i>ลบ</button>
                         </div>
                     </td>
@@ -61,8 +61,8 @@
             ?>
         </tbody>
     </table>
-    <?php require '../fuction/modal-addroom.php';
-    require '../fuction/modal-editroom.php' ?>
+    <!-- <?php require '../fuction/modal-addroom.php';
+    require '../fuction/modal-editroom.php' ?> -->
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();
