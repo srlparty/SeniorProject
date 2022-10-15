@@ -19,9 +19,8 @@
     <table id="myTable" class="display" style="width: 100%;">
         <thead>
             <tr>
-                <th>ลำดับ</th>
-                <th>ชื่อ</th>
-                <th>สกุล</th>
+            <th>หมายเลขการจอง</th>
+                <th>ชื่อ-สกุล</th>
                 <th>วันที่จอง</th>
                 <th>เวลาที่โอน</th>
                 <th>ธนาคารที่โอน</th>
@@ -30,16 +29,22 @@
             </tr>
         </thead>
         <tbody>
+        <?Php
+            require_once('../fuction/connectDB.php');
+            $result = $conn->prepare("SELECT * FROM payment , booking ");
+            $result->execute();
+            for($i=0; $row = $result->fetch(); $i++){
+        ?>
             <tr>
-                <td>..</td>
-                <td>..</td>
-                <td>..</td>
-                <td>..</td>
-                <td>..</td>
-                <td>...</td>
-                <td>...</td>
+            <td><?php echo $row['BK_ID']; ?></td>
+            <td><?php echo $row['PM_Name']; ?></td>
+            <td><?php echo $row['BK_Date']; ?></td>
+            <td><?php echo $row['BK_Time']; ?></td>
+            <td><?php echo $row['PM_Bank']; ?></td>
+            <td><?php echo $row['PM_Total']; ?></td>
                 <td>..</td>
             </tr>
+            <?php } ?>
         </tbody>
     </table>
 

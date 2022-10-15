@@ -14,7 +14,7 @@ body{
     -o-border-radius: 10px;
 }
 .addser{
-    margin-left: 1360px;
+    float: right;
     width: 150px;
     height: 45px;
     font-size: 30px;

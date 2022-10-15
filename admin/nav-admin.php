@@ -84,7 +84,7 @@
        <span class="tooltip">บัญชี</span>
      </li>
      <li>
-       <a href="#">
+       <a href="./dashbord.php">
        <i class='bx bxs-dashboard' ></i>
          <span class="links_name">Dashboard</span>
        </a>

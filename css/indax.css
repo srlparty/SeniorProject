@@ -11,17 +11,19 @@
     width: 100%;
 }
 
+
 .pic-cafa {
     border-radius: 5px;
-    margin-top: 40px;
-    height: 500px;
-    width: 800px;
-    margin-left: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 500px;
+    margin-left: 60%;
 }
 
 .colpic {
-    margin-top: 40px;
-    margin-left: 150px;
+    margin-top: 20px;
+    margin-left: 60px;
 }
 
 h5 {
@@ -63,11 +65,14 @@ p {
 }
 
 h3 {
-   
-    margin-left: 155px;
+   margin-top: 10%;
+    margin-left: 5%;
 }
 
 /* card public relations */
+.preview{
+    margin-top: 8%;
+}
 h2 {
    
     text-align: center;
@@ -91,15 +96,11 @@ h2 {
 /* card room */
 .card {
     margin-top: 5%;
-    left: 12vh;
-    max-width: 90%;
-    border-radius: 30px;
+    left: 15vh;
+    max-width: 85%;
+    border-radius: 10%;
     background: #e0e0e0;
-    box-shadow: -8px 8px 16px #f9f9f9, 8px -8px 16px #f9f9f9;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    
 }
 
 .room-detail {
@@ -144,31 +145,56 @@ h2 {
 /* mapvilla */
 .Villa {
     max-width: 100;
-    margin-top: 50px;
+    margin-top: 10%;
     background-color: #E5E7E9;
     height: 600px;
 
 }
 
 .mapvilla {
-    margin-top: 20px;
-    margin-left: 155px;
+    margin-top: 0.5%;
+    margin-left: 10%;
+}
+.mapvilla iframe{
+    height: 500px;
+    width: 40%;
 }
 
 .nearbyplaces {
-    margin-top: -420px;
-    margin-left: 800px;
+   float: right;
+   margin-right: 20%;
 }
 
-/* About the hotel */
+/* About the hotel
 .card-img {
     margin-top: 0px;
-    height: 450px;
+    height: 50%;
 }
 
 .abouthotel {
     color: #000;
+} */
+
+footer{
+    position: relative;
+    background-color: rgb(166, 116, 50);
+    color: #fff;
+    padding: 5% ;
 }
+footer a{
+color: #fff;
+}
+footer .footer-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+}
+footer .footer-box .footer-item,footer .footer-box .footer-item ul{
+    display: flex;
+    flex-direction: column;
+
+}
+
 @media screen and (max-width: 775px) {
     .news {
       width: 96%;

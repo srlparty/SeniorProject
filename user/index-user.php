@@ -58,73 +58,75 @@
         </div>
 
 
-         <!-- card public relations -->
-    <h2>ยินดีต้อนรับ</h2>
-    <div class="card-body news">
-        ที่พักบรรยากาศอบอุ่น บ้านสวน ริมคลองท้องทุ่งนา บรรยากาศแห่งการพักผ่อน ที่ห้อมล้อมด้วยธรรมชาติ บรรยากาศแห่งความสุข และผ่อนคลาย ที่ "วิลล่าเดอพันตา" ภูเรือ
-    </div><br>
+        <!-- card public relations -->
+        <div class="preview">
+            <h2>ยินดีต้อนรับ</h2>
+            <div class="card-body news">
+                ที่พักบรรยากาศอบอุ่น บ้านสวน ริมคลองท้องทุ่งนา บรรยากาศแห่งการพักผ่อน ที่ห้อมล้อมด้วยธรรมชาติ บรรยากาศแห่งความสุข และผ่อนคลาย ที่ "วิลล่าเดอพันตา" ภูเรือ
+            </div>
+        </div><br>
 
-    <!-- รอบๆห้องพัก -->
-    <div class="row g-0 bg-light position-relative">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="pic-cafa" src="../img/cafa10.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="../img/cafa5.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="../img/cafa6.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="../img/cafa4.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="../img/cafa2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="../img/cafa1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="../img/cafa8.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="../img/cafa9.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="../img/cafa11.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="../img/cafa12.jpg" class="d-block w-100" alt="...">
-                </div>
+        <!-- รอบๆห้องพัก -->
+        <div class="row g-0 bg-light position-relative">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="pic-cafa" src="../img/cafa10.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa9.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa11.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa12.jpg" class="d-block w-100" alt="...">
+                    </div>
 
-                <div class="colpic">
-                    <h4>บรรยากาศรอบๆที่พัก</h4><br>
-                    <p>📌📌พักร่าง พักกาย พักใจ มาชาร์จไฟให้ชุ่มชื่นใจ ที่นี่!!!! 🌾🌻 #ลานนาคาเฟ่</p>
-                    <p> ⏰ ร้านกาแฟ เปิด 9.00น.- 17.00น.</p>
-                    <p> 🍺🍾 นั่งฟังเพลง ชิวๆ กันต่อ ถึง 2 ทุ่ม</p>
-                    <p> 🎯 พักที่ พันตา #วิลล่าเดอพันตา</p>
-                    <p> ☕️พักสายตา กับทุ่งนา🌾🌾หลากสี #ลานนาคาเฟ่</p>
-                    <p> 🍺 มาพักทั้งที สนุกเต็มที่ ที่นี่👉 #ลานเล่าพันตา</p>
-                    <p> 📍คิดจะพัก คิดถึง วิลล่าเดอพันตา</p>
-                    <p>❇️พักที่เดียว ทั้งเที่ยว ทั้งกิน</p>
+                    <div class="colpic">
+                        <h4>บรรยากาศรอบๆที่พัก</h4><br>
+                        <p>📌📌พักร่าง พักกาย พักใจ มาชาร์จไฟให้ชุ่มชื่นใจ ที่นี่!!!! 🌾🌻 #ลานนาคาเฟ่</p>
+                        <p> ⏰ ร้านกาแฟ เปิด 9.00น.- 17.00น.</p>
+                        <p> 🍺🍾 นั่งฟังเพลง ชิวๆ กันต่อ ถึง 2 ทุ่ม</p>
+                        <p> 🎯 พักที่ พันตา #วิลล่าเดอพันตา</p>
+                        <p> ☕️พักสายตา กับทุ่งนา🌾🌾หลากสี #ลานนาคาเฟ่</p>
+                        <p> 🍺 มาพักทั้งที สนุกเต็มที่ ที่นี่👉 #ลานเล่าพันตา</p>
+                        <p> 📍คิดจะพัก คิดถึง วิลล่าเดอพันตา</p>
+                        <p>❇️พักที่เดียว ทั้งเที่ยว ทั้งกิน</p>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    
+        </div>
+
 
         <!-- card room-->
-        
 
-<h3>ห้องพัก</h3>
+
+        <h3>ห้องพัก</h3>
         <div class="card rd mb-3 ">
             <div class="row g-2">
-                <div class="col-md-3">
-                    <img src="../img/bgvilla.png" class="img-fluid rounded-start" alt="...">
+                <div class="col-md-4">
+                    <img src="../img/bgvilla.png" class="img-fluid rounded-start" alt="..." style="margin-top: 3%; margin-left: 3%;">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body room-detail" style="height: 280px;">
@@ -138,19 +140,17 @@
                                 <button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">รายละเอียดเพิ่มเติม</button>
 
                             </div>
-                            <div class="col-md-2 ms-auto">
+                            <div class="col-md-3 ms-auto">
                                 <p class="card-t"><b>ราคา</b></p>
-                                <p class="card-t">ใส่โค้ดราคา</p> 
+                                <p class="card-t">ใส่โค้ดราคา</p>
                                 <br>
-                                <br>
-                                <br>
-                                <a href="./booking.php"><button type="button" class="card-t " style="background: #EF774B; width: 120px; height: 40px; border-radius: 10px; color:white;border: 1px solid #EF774B;  ">จอง</button></a> 
-                    </div> 
-                  </div>  
+                                <a href="./booking.php"><button type="button" class="card-t " style="background: #EF774B; width: 120px; height: 40px; border-radius: 10px; color:white;border: 1px solid #EF774B;  ">จอง</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-           </div>
-       		</div>
+        </div>
 
 
 
@@ -173,13 +173,40 @@
             </div>
         </div>
         <!-- About the hotel -->
-        <div class="cabouthotel">
+        <!-- <div class="cabouthotel">
             <img src="../img/bbg.png" class="card-img" alt="...">
 
-        </div>
+        </div> -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-box">
+                    <div class="footer-item">
+                        <div class="footer-logo">
+                            <img src="../img/villalogo.PNG" alt="" height="50px" width="80px"><br>
+                            <span>Villa de panta</span>
+                        </div>
+                        <span>258 หมู่ 2, ถนนเลย-สระบุรี ต.หนองบัว อ.ภูเรือ จ.เลย</span><br>
+                        <span>+66 083 242 8294</span><br>
+                        <span>thepanta.loei@gmail.com</span>
+                    </div>
+                    <div class="footer-item">
+                        <ul>
+                            <a href="">About</a>
+                            <a href="">Contact</a>
+                            <a href="">Terms & Conditions</a>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <ul>
+                            <a href="">facebook</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <?php require '../fuction/modal-user.php' ?>
-   
+
     </body>
 
 </html>

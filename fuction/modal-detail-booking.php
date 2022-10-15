@@ -21,19 +21,19 @@
                                 <label for="text" class="form-label" ></label><br>
                             </div>
                             <div class="date-checkin"><b>วันที่เช็คอิน :</b>
-                                <input for="text" class="form-label" id="BK_Checkin"  name="BK_Checkin"><br>
+                                <label for="text" class="form-label" id="BK_Checkin"  name="BK_Checkin"><br>
                             </div>
                             <div class="date-checkout"><b>วันที่เช็คเอาท์ :</b>
-                                <input for="text" class="form-label" id="BK_Checkout"  name="BK_Checkout"><br>
+                                <label for="text" class="form-label" id="BK_Checkout"  name="BK_Checkout"><br>
                             </div>
                             <div class="service"><b>บริการเสริม :</b>
-                                <input for="text" class="form-label" ></input><br>
+                                <label for="text" class="form-label" ></label><br>
                             </div>
                             <div class="bank"><b>โอนจากธนาคาร :</b>
-                                <input for="text" class="form-label" id="PM_Bank"  name="PM_Bank"><br>
+                                <label for="text" class="form-label" id="PM_Bank"  name="PM_Bank"><br>
                             </div>
                             <div class="time-pay"><b>เวลาที่โอน :</b>
-                                <input for="text" class="form-label" id="PM_Date"  name="PM_Date" ><br>
+                                <label for="text" class="form-label" id="PM_Date"  name="PM_Date" ><br>
                             </div>
                             <label for="text" class="form-label" id="PM_Name"><b>ชื่อผู้จอง  </b></label><br>
                             <div class="price-book"><b>ราคารวม :</b>
