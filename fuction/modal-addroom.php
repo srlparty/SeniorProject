@@ -14,19 +14,30 @@
     if (isset($_POST['save-btn'])) {
         $R_ID = $_POST['R_ID'];
         $R_Type = $_POST['R_Type'];
-        $R_Bed = $_POST['R_Bed']; //ดึงเตียงคุ่ เดียว
+        $R_Bed = $_POST['R_Bed']; 
         $R_Detail = $_POST['R_Detail'];
         $R_Typecount = $_POST['R_Typecount'];
         $R_Price = $_POST['R_Price'];
         $R_Img = $_POST['R_Img'];
 
-        if (isset($_POST["R_ID"]) != "" && isset($_POST["R_Type"])  != "" && isset($_POST["R_Bed"]) != "" && isset($_POST["R_Detail"]) != "" && isset($_POST["R_Typecount"]) != "" && isset($_POST["R_Price"]) != "" && isset($R_Img) != "") {
-            mysqli_query($conn, "INSERT INTO room (R_ID, R_Type, R_Bed, R_Detail, R_Typecount, R_Price, R_Img) values ('$R_ID', '$R_Type','$R_Bed', '$R_Detail','$R_Typecount','$R_Price' ,'$R_Img')");
-
-            echo "<script>alert('เพิ่มข้อมูลสำเร็จ');window.location='./admin/manage.php';</script>";
+        if (isset($_POST["R_ID"]) != "" && isset($_POST["R_Type"])  != "" && isset($_POST["R_Bed"]) != "" && isset($_POST["R_Detail"]) !=
+         "" && isset($_POST["R_Typecount"]) != "" && isset($_POST["R_Price"]) != "" && isset($R_Img) != "") {
+            $rsCheck = mysqli_query($conn, $sqlCheck);
+            $rowCheck = mysqli_num_rows($rsCheck);
+            if ($rowCheck > 0) {
+                echo "<script>alert('เลขห้องพักซ้ำ กรุณาเปลี่ยนเลขห้องพัก');</script>";
+            }else{
+                $sqlInsert = "INSERT INTO room (R_ID, R_Type, R_Bed, R_Detail, R_Typecount, R_Price, R_Img) values ('$R_ID', '$R_Type','$R_Bed', '$R_Detail','$R_Typecount','$R_Price' ,'$R_Img')";
+                if (mysqli_query($conn, $sqlInsert)) {
+                    echo "<script>alert('เพิ่มห้องสำเร็จ');window.location='../damin/manage.php';</script>";
+                 } else {
+                    echo "<script>alert('เกิดข้อผิดพลาดกรุณาลองอีกครั้ง');</script>";
+                      }
+                  }
+              } else {
+                  echo "<script>alert('เกิดข้อผิดพลาดกรุณาลองอีกครั้ง');</script>";
+          }
         }
-    }
-
     ?>
 
 
@@ -47,7 +58,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="R_Type" class="form-label">ประเภทห้อง</label>
-                            <select id="R_Type" class="form-control" name="R_Type" placeholder="ประเภทห้องพัก">
+                            <select id="R_Type" class="form-control" name="R_Type" value="R_Type" placeholder="ประเภทห้องพัก">
                                 <option selected>เลือกประเภทห้อง</option>
                                 <option value="1">Standard</option>
                                 <option value="2">Family</option>
