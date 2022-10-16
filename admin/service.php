@@ -33,7 +33,7 @@
         <tbody>
         <?Php
             require_once('../fuction/connectDB.php');
-            $result = $conn->prepare("SELECT * FROM service");
+            $result = $dbconn->prepare("SELECT * FROM service");
             $result->execute();
             for($i=0; $row = $result->fetch(); $i++){
         ?>

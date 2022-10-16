@@ -35,7 +35,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                    <a> <?Php
             require_once('../fuction/connectDB.php');
-            $result = $conn->prepare("SELECT * FROM user");
+            $result = $dbconn->prepare("SELECT * FROM user");
             $result->execute();
             for($i=0; $row = $result->fetch(); $i++){
         ?>

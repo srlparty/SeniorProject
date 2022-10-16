@@ -68,20 +68,7 @@
                     <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp">
                 </form>
             </div>
-            <!-- <div class="col-md-3" style="border-left: 1px solid rgb(221, 221, 221) ;  ">
-                <p>ประเภทห้องพัก</p>
-                <form method="POST" class="hstack gap-4 mt-4">
-                <label for="R_Type" class="form-label">ประเภทห้อง</label>
-                        <select id="R_Type" class="form-control" name="R_Type" placeholder="ประเภทห้องพัก">
-                            <option selected>เลือกประเภทห้อง</option>
-                            <option value="1">Standard</option>
-                            <option value="2">Family</option>
-                            <option value="3">Superior</option>
-                            <option value="4">Deluxe</option>
-                            <option value="5">Triple Family room</option>
-                        </select>
-                </form>
-            </div> -->
+    
             <button class="col-md-3 btnsearch" href="">
                 ค้นหา
             </button>
@@ -96,55 +83,57 @@
 </div>
 
     <!-- รอบๆห้องพัก
-    <div class="row g-0 bg-light position-relative">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="pic-cafa" src="./img/cafa10.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="./img/cafa5.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="./img/cafa6.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="./img/cafa4.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="./img/cafa2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="./img/cafa1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="./img/cafa8.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="./img/cafa9.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="./img/cafa11.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img class="pic-cafa" src="./img/cafa12.jpg" class="d-block w-100" alt="...">
-                </div>
+            <div class="row g-0 bg-light position-relative">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="pic-cafa" src="../img/cafa10.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa9.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa11.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="pic-cafa" src="../img/cafa12.jpg" class="d-block w-100" alt="...">
+                    </div>
 
-                <div class="colpic">
-                    <h4>บรรยากาศรอบๆที่พัก</h4><br>
-                    <p>📌📌พักร่าง พักกาย พักใจ มาชาร์จไฟให้ชุ่มชื่นใจ ที่นี่!!!! 🌾🌻 #ลานนาคาเฟ่</p>
-                    <p> ⏰ ร้านกาแฟ เปิด 9.00น.- 17.00น.</p>
-                    <p> 🍺🍾 นั่งฟังเพลง ชิวๆ กันต่อ ถึง 2 ทุ่ม</p>
-                    <p> 🎯 พักที่ พันตา #วิลล่าเดอพันตา</p>
-                    <p> ☕️พักสายตา กับทุ่งนา🌾🌾หลากสี #ลานนาคาเฟ่</p>
-                    <p> 🍺 มาพักทั้งที สนุกเต็มที่ ที่นี่👉 #ลานเล่าพันตา</p>
-                    <p> 📍คิดจะพัก คิดถึง วิลล่าเดอพันตา</p>
-                    <p>❇️พักที่เดียว ทั้งเที่ยว ทั้งกิน</p>
+                    <div class="colpic">
+                        <h4>บรรยากาศรอบๆที่พัก</h4><br>
+                        <p>📌📌พักร่าง พักกาย พักใจ มาชาร์จไฟให้ชุ่มชื่นใจ ที่นี่!!!! 🌾🌻 #ลานนาคาเฟ่</p>
+                        <p> ⏰ ร้านกาแฟ เปิด 9.00น.- 17.00น.</p>
+                        <p> 🍺🍾 นั่งฟังเพลง ชิวๆ กันต่อ ถึง 2 ทุ่ม</p>
+                        <p> 🎯 พักที่ พันตา #วิลล่าเดอพันตา</p>
+                        <p> ☕️พักสายตา กับทุ่งนา🌾🌾หลากสี #ลานนาคาเฟ่</p>
+                        <p> 🍺 มาพักทั้งที สนุกเต็มที่ ที่นี่👉 #ลานเล่าพันตา</p>
+                        <p> 📍คิดจะพัก คิดถึง วิลล่าเดอพันตา</p>
+                        <p>❇️พักที่เดียว ทั้งเที่ยว ทั้งกิน</p>
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
+
     </div> -->
 
     <!-- card room-->
