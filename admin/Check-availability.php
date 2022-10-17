@@ -20,73 +20,77 @@
 <body>
     <h2><b>ตรวจสอบห้องว่าง</b></h2>
     <div class="card-group">
-        <div class="card" style="background-color: #145A32; color:aliceblue;">
-            <div class="card-header"><i class='bx bxs-bed'></i> ว่าง</div>
-            <div class="card-main">
-                <div class="main-room">ใส่โค้ด</div>
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">ว่าง</div>
+            <div class="card-body">
+                <h5 class="card-title">Success card title</h5>
             </div>
         </div>
-        <div class="card" style="background-color: #D32F2F; color:aliceblue;">
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;  margin-left: 1%;">
             <div class="card-header">เต็ม</div>
-            <div class="card-main">
-                <div class="main-room">ใส่โค้ด</div>
+            <div class="card-body">
+                <h5 class="card-title">Success card title</h5>
             </div>
         </div>
-        <div class="card" style="background-color: #F39C12; color:aliceblue;">
+        <div class="card text-white bg-warning mb-3" style="max-width: 18rem; margin-left: 1%;">
             <div class="card-header">กำลังทำความสะอาด</div>
-            <div class="card-main">
-                <div class="main-room">ใส่โค้ด</div>
+            <div class="card-body">
+                <h5 class="card-title">Success card title</h5>
             </div>
         </div>
-        <div class="card" style="background-color: #8E44AD ; color:aliceblue;">
+        <div class="card text-white bg-secondary mb-3" style="max-width: 18rem; margin-left: 1%;">
             <div class="card-header">ชำรุดกำลังซ่อม</div>
-            <div class="card-main">
-                <div class="main-room">ใส่โค้ด</div>
+            <div class="card-body">
+                <h5 class="card-title">Success card title</h5>
             </div>
         </div>
+
     </div>
-    <table id="myTable" class="display" style="width: 100%;">
-        <thead>
-            <tr>
-                <th>เลขห้อง</th>
-                <th>ประเภทห้อง</th>
-                <th>สถานะ</th>
-                <th>จัดการ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?Php
-            require_once('../fuction/connectDB.php');
-            $result = $conn->prepare("SELECT * FROM room ");
-            $result->execute();
-            for ($i = 0; $row = $result->fetch(); $i++) {
-            ?>
+
+
+
+        <table id="myTable" class="display" style="width: 100%;">
+            <thead>
                 <tr>
-                <td><?php echo $row['R_ID']; ?></td>
-                <td><?php echo $row['R_Type']; ?></td>
-                    <td>
-                        <select class="form-select" aria-label="Default select">
-                            <option selected>เลือกสถานะห้อง</option>
-                            <option value="1">ว่าง</option>
-                            <option value="2">เต็ม</option>
-                            <option value="3">กำลังทำความสะอาด</option>
-                            <option value="3">ชำรุดกำลังซ่อม</option>
-                        </select>
-                    </td>
-                    <td>
-                        <div class="edit-delete">
-                            <button type="button" class="btn btn-success"><i class='bx bx-edit-alt'></i>บันทึก</button>
-                        </div>
-                    </td>
+                    <th>เลขห้อง</th>
+                    <th>ประเภทห้อง</th>
+                    <th>สถานะ</th>
+                    <th>จัดการ</th>
                 </tr>
-            <?php } ?>
-        </tbody>
-    </table>
-    <script>
-        $(document).ready(function() {
-            $("#myTable").DataTable();
-        });
-    </script>
+            </thead>
+            <tbody>
+                <?Php
+                require_once('../fuction/connectDB.php');
+                $result = $dbconn->prepare("SELECT * FROM room ");
+                $result->execute();
+                for ($i = 0; $row = $result->fetch(); $i++) {
+                ?>
+                    <tr>
+                        <td><?php echo $row['R_ID']; ?></td>
+                        <td><?php echo $row['R_Type']; ?></td>
+                        <td>
+                            <select class="form-select" aria-label="Default select">
+                                <option selected>เลือกสถานะห้อง</option>
+                                <option value="1">ว่าง</option>
+                                <option value="2">เต็ม</option>
+                                <option value="3">กำลังทำความสะอาด</option>
+                                <option value="3">ชำรุดกำลังซ่อม</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="edit-delete">
+                                <button type="button" class="btn btn-success"><i class='bx bx-edit-alt'></i>บันทึก</button>
+                            </div>
+                        </td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+        <script>
+            $(document).ready(function() {
+                $("#myTable").DataTable();
+            });
+        </script>
 </body>
 
 </html>

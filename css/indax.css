@@ -35,14 +35,15 @@ h5 {
 .container {
     position: absolute;
     background-color: #fff;
-    max-width: 100%;
+    max-width: 90%;
     height: fit-content;
     top: 54vh;
-    left: 7%;
+    left: 8%;
     border-radius: 20px;
     z-index: 1;
     box-shadow: -1px 6px 5px #F4F6F6,
         0px -1px 4px;
+    margin-bottom: 10%;
 
 }
 
@@ -71,7 +72,7 @@ h3 {
 
 /* card public relations */
 .preview{
-    margin-top: 8%;
+    margin-top: 12%;
 }
 h2 {
    
@@ -99,8 +100,7 @@ h2 {
     left: 15vh;
     max-width: 85%;
     border-radius: 10%;
-    background: #e0e0e0;
-    
+    background: #e0e0e0;  
 }
 
 .room-detail {
@@ -162,6 +162,7 @@ h2 {
 
 .nearbyplaces {
    float: right;
+   margin-top: 5%;
    margin-right: 20%;
 }
 
@@ -177,7 +178,7 @@ h2 {
 
 footer{
     position: relative;
-    background-color: rgb(166, 116, 50);
+    background-color: #EF774B;
     color: #fff;
     padding: 5% ;
 }
