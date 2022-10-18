@@ -36,7 +36,7 @@
         <tbody>
         <?Php
             require_once('../fuction/connectDB.php');
-            $result = $conn->prepare("SELECT * FROM room");
+            $result = $dbconn->prepare("SELECT * FROM room");
             $result->execute();
             for($i=0; $row = $result->fetch(); $i++){
         ?>

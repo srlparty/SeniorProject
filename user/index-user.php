@@ -128,6 +128,7 @@
                 <div class="col-md-4">
                     <img src="../img/bgvilla.png" class="img-fluid rounded-start" alt="..." style="margin-top: 3%; margin-left: 3%;">
                 </div>
+
                 <div class="col-md-8">
                     <div class="card-body room-detail" style="height: 280px;">
                         <h3 class="title"><b>ใส่โค้ดประเภทห้อง เตียง</b></h3>
@@ -140,7 +141,7 @@
                                 <button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">รายละเอียดเพิ่มเติม</button>
 
                             </div>
-                            <div class="col-md-3 ms-auto">
+                            <div class="col-md-6">
                                 <p class="card-t"><b>ราคา</b></p>
                                 <p class="card-t">ใส่โค้ดราคา</p>
                                 <br>
@@ -172,17 +173,13 @@
                 </div>
             </div>
         </div>
-        <!-- About the hotel -->
-        <!-- <div class="cabouthotel">
-            <img src="../img/bbg.png" class="card-img" alt="...">
 
-        </div> -->
         <footer>
             <div class="footer-container">
                 <div class="footer-box">
                     <div class="footer-item">
                         <div class="footer-logo">
-                            <img src="../img/villalogo.PNG" alt="" height="50px" width="80px"><br>
+                            <img src="../img/logovilla.PNG" alt="" height="80px" width="100px"><br>
                             <span>Villa de panta</span>
                         </div>
                         <span>258 หมู่ 2, ถนนเลย-สระบุรี ต.หนองบัว อ.ภูเรือ จ.เลย</span><br>
@@ -198,7 +195,7 @@
                     </div>
                     <div class="footer-item">
                         <ul>
-                            <a href="">facebook</a>
+                            <a href="https://www.facebook.com/VilladePanta456">facebook</a>
                         </ul>
                     </div>
                 </div>

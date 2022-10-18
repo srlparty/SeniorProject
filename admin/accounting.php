@@ -31,7 +31,7 @@
         <tbody>
         <?Php
             require_once('../fuction/connectDB.php');
-            $result = $conn->prepare("SELECT * FROM payment , booking ");
+            $result = $dbconn->prepare("SELECT * FROM payment , booking ");
             $result->execute();
             for($i=0; $row = $result->fetch(); $i++){
         ?>

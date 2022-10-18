@@ -14,19 +14,30 @@
     if (isset($_POST['save-btn'])) {
         $R_ID = $_POST['R_ID'];
         $R_Type = $_POST['R_Type'];
-        $R_Bed = $_POST['R_Bed']; //ดึงเตียงคุ่ เดียว
+        $R_Bed = $_POST['R_Bed']; 
         $R_Detail = $_POST['R_Detail'];
         $R_Typecount = $_POST['R_Typecount'];
         $R_Price = $_POST['R_Price'];
         $R_Img = $_POST['R_Img'];
 
-        if (isset($_POST["R_ID"]) != "" && isset($_POST["R_Type"])  != "" && isset($_POST["R_Bed"]) != "" && isset($_POST["R_Detail"]) != "" && isset($_POST["R_Typecount"]) != "" && isset($_POST["R_Price"]) != "" && isset($R_Img) != "") {
-            mysqli_query($conn, "INSERT INTO room (R_ID, R_Type, R_Bed, R_Detail, R_Typecount, R_Price, R_Img) values ('$R_ID', '$R_Type','$R_Bed', '$R_Detail','$R_Typecount','$R_Price' ,'$R_Img')");
-
-            echo "<script>alert('เพิ่มข้อมูลสำเร็จ');window.location='../admin/manage.php';</script>";
+        if (isset($_POST["R_ID"]) != "" && isset($_POST["R_Type"])  != "" && isset($_POST["R_Bed"]) != "" && isset($_POST["R_Detail"]) !=
+         "" && isset($_POST["R_Typecount"]) != "" && isset($_POST["R_Price"]) != "" && isset($R_Img) != "") {
+            $rsCheck = mysqli_query($conn, $sqlCheck);
+            $rowCheck = mysqli_num_rows($rsCheck);
+            if ($rowCheck > 0) {
+                echo "<script>alert('เลขห้องพักซ้ำ กรุณาเปลี่ยนเลขห้องพัก');</script>";
+            }else{
+                $sqlInsert = "INSERT INTO room (R_ID, R_Type, R_Bed, R_Detail, R_Typecount, R_Price, R_Img) values ('$R_ID', '$R_Type','$R_Bed', '$R_Detail','$R_Typecount','$R_Price' ,'$R_Img')";
+                if (mysqli_query($conn, $sqlInsert)) {
+                    echo "<script>alert('เพิ่มห้องสำเร็จ');window.location='../damin/manage.php';</script>";
+                 } else {
+                    echo "<script>alert('เกิดข้อผิดพลาดกรุณาลองอีกครั้ง');</script>";
+                      }
+                  }
+              } else {
+                  echo "<script>alert('เกิดข้อผิดพลาดกรุณาลองอีกครั้ง');</script>";
+          }
         }
-    }
-
     ?>
 
 
@@ -47,7 +58,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="R_Type" class="form-label">ประเภทห้อง</label>
-                            <select id="R_Type" class="form-control" name="R_Type" placeholder="ประเภทห้องพัก">
+                            <select id="R_Type" class="form-control" name="R_Type" value="R_Type" placeholder="ประเภทห้องพัก">
                                 <option selected>เลือกประเภทห้อง</option>
                                 <option value="1">Standard</option>
                                 <option value="2">Family</option>
@@ -61,54 +72,54 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">เตียงคู่</label>
-                                <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
+                                <input id="number" type="number" value="" class="form-control" id="bed1" name="Bed" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">เตียงเดี่ยว</label>
-                                <input id="number" type="number" value="" class="form-control" id="bed2" name="2" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
+                                <input id="number" type="number" value="" class="form-control" id="bed2" name="Bed" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="R_Detail" class="form-label">สิ่งอำนวยความสะดวก</label><br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-air" value="1" name="1">
+                                <input class="form-check-input" type="checkbox" id="facilities-air" value="1" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox1">แอร์</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-tv" value="2" name="2">
+                                <input class="form-check-input" type="checkbox" id="facilities-tv" value="2" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">โทรทัศน์</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-water-heater" value="3" name="3">
+                                <input class="form-check-input" type="checkbox" id="facilities-water-heater" value="3" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">เครื่องทำน้ำอุ่น</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-towel" value="4" name="4">
+                                <input class="form-check-input" type="checkbox" id="facilities-towel" value="4" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">ผ้าเช็ดตัว</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-towel-hair" value="5" name="5">
+                                <input class="form-check-input" type="checkbox" id="facilities-towel-hair" value="5" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">ผ้าเช็ดผม</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-fridge" value="6" name="6">
+                                <input class="form-check-input" type="checkbox" id="facilities-fridge" value="6" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">ตู้เย็น</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-kettle" value="7" name="7">
+                                <input class="form-check-input" type="checkbox" id="facilities-kettle" value="7" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">กาน้ำร้อน</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-water" value="8" name="8">
+                                <input class="form-check-input" type="checkbox" id="facilities-water" value="8" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">น้ำดื่ม</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-pillow" value="9" name="9">
+                                <input class="form-check-input" type="checkbox" id="facilities-pillow" value="9" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">หมอน</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-blanket" value="10" name="10">
+                                <input class="form-check-input" type="checkbox" id="facilities-blanket" value="10" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">ผ้าห่ม</label>
                             </div>
                         </div>
