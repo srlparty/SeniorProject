@@ -33,7 +33,7 @@
         <tbody>
         <?Php
             require_once('../fuction/connectDB.php');
-            $result = $conn->prepare("SELECT * FROM service");
+            $result = $dbconn->prepare("SELECT * FROM onservice");
             $result->execute();
             for($i=0; $row = $result->fetch(); $i++){
         ?>
@@ -44,7 +44,7 @@
                 <td>
                     <div class="edit-delete">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editser"><i class='bx bx-edit-alt'></i>แก้ไข</button>
-                        <button type="button" class="btn btn-danger"><i class='bx bx-trash' ></i>ลบ</button>
+                        <a type="button"  href="../fuction/deleteservice.php=<?php echo $row['SV_ID'] ?>" onclick="return confirm('คุณต้องการลบบริการเสริมนี้ใช่หรือไม่')" class="btn btn-danger"  style="background-color: #DB1414 ; border-radius :10px; height: 5vh;"><span class="bx bx-trash"></i>ลบ</a>
                     </div>
                 </td>
             </tr>

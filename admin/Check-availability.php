@@ -47,10 +47,25 @@
 
     </div>
 
-
-
         <table id="myTable" class="display" style="width: 100%;">
             <thead>
+    <table id="myTable" class="display" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>เลขห้อง</th>
+                <th>ประเภทห้อง</th>
+                <th>สถานะ</th>
+                <th>จัดการ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?Php
+            require_once('../fuction/connectDB.php');
+            $result = $dbconn->prepare("SELECT * FROM room ");
+            $result->execute();
+            for ($i = 0; $row = $result->fetch(); $i++) 
+            ?>
+
                 <tr>
                     <th>เลขห้อง</th>
                     <th>ประเภทห้อง</th>
