@@ -72,54 +72,54 @@
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">เตียงคู่</label>
-                                <input id="number" type="number" value="" class="form-control" id="bed1" name="1" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
+                                <input id="number" type="number" value="" class="form-control" id="bed1" name="Bed" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">เตียงเดี่ยว</label>
-                                <input id="number" type="number" value="" class="form-control" id="bed2" name="2" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
+                                <input id="number" type="number" value="" class="form-control" id="bed2" name="Bed" aria-describedby="emailHelp" placeholder="กรุณาระบุจำนวนเตียง">
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="R_Detail" class="form-label">สิ่งอำนวยความสะดวก</label><br>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-air" value="1" name="1">
+                                <input class="form-check-input" type="checkbox" id="facilities-air" value="1" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox1">แอร์</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-tv" value="2" name="2">
+                                <input class="form-check-input" type="checkbox" id="facilities-tv" value="2" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">โทรทัศน์</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-water-heater" value="3" name="3">
+                                <input class="form-check-input" type="checkbox" id="facilities-water-heater" value="3" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">เครื่องทำน้ำอุ่น</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-towel" value="4" name="4">
+                                <input class="form-check-input" type="checkbox" id="facilities-towel" value="4" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">ผ้าเช็ดตัว</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-towel-hair" value="5" name="5">
+                                <input class="form-check-input" type="checkbox" id="facilities-towel-hair" value="5" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">ผ้าเช็ดผม</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-fridge" value="6" name="6">
+                                <input class="form-check-input" type="checkbox" id="facilities-fridge" value="6" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">ตู้เย็น</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-kettle" value="7" name="7">
+                                <input class="form-check-input" type="checkbox" id="facilities-kettle" value="7" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">กาน้ำร้อน</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-water" value="8" name="8">
+                                <input class="form-check-input" type="checkbox" id="facilities-water" value="8" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">น้ำดื่ม</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-pillow" value="9" name="9">
+                                <input class="form-check-input" type="checkbox" id="facilities-pillow" value="9" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">หมอน</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="facilities-blanket" value="10" name="10">
+                                <input class="form-check-input" type="checkbox" id="facilities-blanket" value="10" name="RD_Detail	">
                                 <label class="form-check-label" for="inlineCheckbox2">ผ้าห่ม</label>
                             </div>
                         </div>
