@@ -20,13 +20,13 @@
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
-      <li>
+      <!-- <li>
         <a href="./board.php">
         <i class='bx bxs-chalkboard' ></i>
           <span class="links_name">แก้ไขหน้าประชาสัมพันธ์</span>
         </a>
          <span class="tooltip">แก้ไขหน้าประชาสัมพันธ์</span>
-      </li>
+      </li> -->
       <li>
        <a href="./manage.php">
        <i class='bx bxs-bed' ></i> 

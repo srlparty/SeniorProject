@@ -82,39 +82,40 @@
        <ul> ที่พักบรรยากาศอบอุ่น บ้านสวน ริมคลองท้องทุ่งนา บรรยากาศแห่งการพักผ่อน ที่ห้อมล้อมด้วยธรรมชาติ บรรยากาศแห่งความสุข และผ่อนคลาย ที่ "วิลล่าเดอพันตา" ภูเรือ</ul>
 </div>
 
-    <!-- รอบๆห้องพัก
-            <div class="row g-0 bg-light position-relative">
+<!-- <<<<<<< HEAD -->
+    <!-- รอบๆห้องพัก -->
+    <div class="row g-0 bg-light position-relative">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="pic-cafa" src="../img/cafa10.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa10.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img class="pic-cafa" src="../img/cafa5.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa5.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img class="pic-cafa" src="../img/cafa6.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa6.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img class="pic-cafa" src="../img/cafa4.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa4.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img class="pic-cafa" src="../img/cafa2.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa2.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img class="pic-cafa" src="../img/cafa1.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img class="pic-cafa" src="../img/cafa8.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa8.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img class="pic-cafa" src="../img/cafa9.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa9.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img class="pic-cafa" src="../img/cafa11.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa11.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img class="pic-cafa" src="../img/cafa12.jpg" class="d-block w-100" alt="...">
+                        <img class="pic-cafa" src="./img/cafa12.jpg" class="d-block w-100" alt="...">
                     </div>
 
                     <div class="colpic">
@@ -133,10 +134,10 @@
             </div>
         </div>
         </div>
+            
 
-    </div> -->
 
-    <!-- card room-->
+    <!-- card room -->
     <h3>ห้องพัก</h3>
     <div class="card rd mb-3 ">
         <div class="row g-0">
@@ -154,7 +155,7 @@
                             <p class="card-t"><i class='bx bxs-dog'></i>ไม่อนุญาตให้นำสัตว์เลี้ยงเข้าห้องพัก</p>
                             <button type="button" class="btn btn-link" style="color: #EF774B;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">รายละเอียดเพิ่มเติม</button>
                         </div>
-                        <div class="col-md-3 ms-auto">
+                        <div class="col-md-3">
                             <p class="card-t"><b>ราคา</b></p>
                             <p class="card-t">
                             <h1>ใส่โค้ดราคา</h1>
@@ -187,11 +188,34 @@
             </div>
         </div>
     </div>
-    <!-- About the hotel -->
-    <div class="cabouthotel">
-        <img src="./img/bbg.png" class="card-img" alt="...">
-
-    </div>
+   
+    <footer>
+            <div class="footer-container">
+                <div class="footer-box">
+                    <div class="footer-item">
+                        <div class="footer-logo">
+                            <img src="./img/logovilla.PNG" alt="" height="80px" width="100px"><br>
+                            <span>Villa de panta</span>
+                        </div>
+                        <span>258 หมู่ 2, ถนนเลย-สระบุรี ต.หนองบัว อ.ภูเรือ จ.เลย</span><br>
+                        <span>+66 083 242 8294</span><br>
+                        <span>thepanta.loei@gmail.com</span>
+                    </div>
+                    <div class="footer-item">
+                        <ul>
+                            <a >About</a>
+                            <a >Contact</a>
+                            <a >Terms & Conditions</a>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <ul>
+                            <a href="https://www.facebook.com/VilladePanta456">facebook</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 </body>
 

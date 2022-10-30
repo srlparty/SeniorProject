@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg  nav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../img/villalogo.PNG" alt="" width="80px" height="60px"></a>
+            <a class="navbar-brand" href="#"><img src="../img/villalogo.PNG" alt="" width="100px" height="50px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,22 +32,20 @@
                     </li>
                 </ul>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                   <a> <?Php
-            require_once('../fuction/connectDB.php');
-            $result = $dbconn->prepare("SELECT * FROM user");
-            $result->execute();
-            for($i=0; $row = $result->fetch(); $i++){
-        ?>
-               <?php echo $row['firstname']; ?>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./editinfo.php">แก้ไขข้อมูลส่วนตัว</a></li>
-                        <li><a class="dropdown-item" href="./logout.php">ออกจากระบบ</a></li>
-                    </ul>
+
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" <?Php
+                                                                                                                                require_once('../fuction/connectDB.php');
+                                                                                                                                $result = $dbconn->prepare("SELECT * FROM user");
+                                                                                                                                $result->execute();
+                                                                                                                                for ($i = 0; $row = $result->fetch(); $i++) {
+                                                                                                                                ?> <?php echo $row['firstname']; ?> </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./editinfo.php">แก้ไขข้อมูลส่วนตัว</a></li>
+                            <li><a class="dropdown-item" href="./logout.php">ออกจากระบบ</a></li>
+                        </ul>
                 </li>
-                <?php
-            }
+            <?php
+                                                                                                                                }
             ?>
             </div>
         </div>
