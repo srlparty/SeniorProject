@@ -50,7 +50,7 @@
      </li>
       <li>
        <a href="./categories.php">
-       <i class='bx bxs-bed'></i> 
+       <i class='bx bx-list-ul'></i>
          <span class="links_name">จัดการประเภทห้องพัก</span>
        </a>
        <span class="tooltip">จัดการประเภทห้องพัก</span>
@@ -103,6 +103,13 @@
          <span class="links_name">บัญชีผู้ใช้</span>
        </a>
        <span class="tooltip">บัญชีผู้ใช้</span>
+     </li>
+     <li>
+       <a href="./setting.php">
+       <i class='bx bx-cog'></i>
+         <span class="links_name">เกี่ยวกับฉัน</span>
+       </a>
+       <span class="tooltip">เกี่ยวกับฉัน</span>
      </li>
      <li class="profile">
          <div class="profile-details">
