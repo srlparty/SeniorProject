@@ -25,7 +25,7 @@
                         <a class="nav-link" aria-current="page" href="./index-user.php">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pay.php">ชำระเงิน</a>
+                        <a class="nav-link" href="./payment.php">ชำระเงิน</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./mybooking.php">การจองของฉัน</a>

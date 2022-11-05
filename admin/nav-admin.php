@@ -28,6 +28,34 @@
          <span class="tooltip">แก้ไขหน้าประชาสัมพันธ์</span>
       </li> -->
       <li>
+       <a href="./booking.php">
+       <i class='bx bxs-book-content'></i> 
+         <span class="links_name">การจอง</span>
+       </a>
+       <span class="tooltip">การจอง</span>
+     </li>
+      <li>
+       <a href="./check-in.php">
+       <i class='bx bxs-arrow-to-right'></i> 
+         <span class="links_name">Check In</span>
+       </a>
+       <span class="tooltip">Check In</span>
+     </li>
+     <li>
+       <a href="./check-out.php">
+       <i class='bx bxs-arrow-from-right' ></i> 
+         <span class="links_name">Check Out</span>
+       </a>
+       <span class="tooltip">Check Out</span>
+     </li>
+      <li>
+       <a href="./categories.php">
+       <i class='bx bxs-bed'></i> 
+         <span class="links_name">จัดการประเภทห้องพัก</span>
+       </a>
+       <span class="tooltip">จัดการประเภทห้องพัก</span>
+     </li>
+      <li>
        <a href="./manage.php">
        <i class='bx bxs-bed' ></i> 
          <span class="links_name">จัดการห้องพัก</span>
@@ -42,25 +70,11 @@
        <span class="tooltip">บริการเสริม</span>
      </li>
      <li>
-       <a href="./Check-availability.php">
-       <i class='bx bxs-check-square' ></i>
-         <span class="links_name">ตรวจสอบห้องว่าง</span>
-       </a>
-       <span class="tooltip">ตรวจสอบห้องว่าง</span>
-     </li>
-     <li>
        <a href="./check-pay.php">
        <i class='bx bx-wallet'></i>
          <span class="links_name">ตรวจสอบการชำระเงิน</span>
        </a>
        <span class="tooltip">ตรวจสอบการชำระเงิน</span>
-     </li>
-     <li>
-       <a href="./walk-in.php">
-       <i class='bx bx-walk' ></i>
-         <span class="links_name">การจองแบบ Walk in</span>
-       </a>
-       <span class="tooltip">การจองแบบ Walk in</span>
      </li>
      <li>
        <a href="./promotion.php">
@@ -77,18 +91,18 @@
        <span class="tooltip">ปฎิทินการจอง</span>
      </li>
      <li>
-       <a href="./accounting.php">
-       <i class='bx bx-money-withdraw'></i>
-         <span class="links_name">บัญชี</span>
-       </a>
-       <span class="tooltip">บัญชี</span>
-     </li>
-     <li>
        <a href="./dashbord.php">
        <i class='bx bxs-dashboard' ></i>
          <span class="links_name">Dashboard</span>
        </a>
        <span class="tooltip">Dashboard</span>
+     </li>
+     <li>
+       <a href="./accounting.php">
+       <i class='bx bx-user' ></i>
+         <span class="links_name">บัญชีผู้ใช้</span>
+       </a>
+       <span class="tooltip">บัญชีผู้ใช้</span>
      </li>
      <li class="profile">
          <div class="profile-details">

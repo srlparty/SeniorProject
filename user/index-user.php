@@ -32,14 +32,14 @@
                     <p>วันที่เช็คอิน</p>
                     <form method="POST" class="hstack gap-4 mt-4">
                         <label>เลือกวันที่เช็คอิน</label>
-                        <input type="date" class="form-control" style="width: 50%;">
+                        <input type="date" class="form-control" style="width: 50%;"autocomplete="off" value="<?php echo isset($date_in) ? date("Y-m-d",strtotime($date_in)) : "" ?>">
                     </form>
                 </div>
                 <div class="col-md-3" style="border-left: 1px solid rgb(221, 221, 221) ;">
                     <p> วันที่เช็คเอ้าท์</p>
                     <form method="POST" class="hstack gap-4 mt-4">
                         <label>เลือกวันที่เช็คเอ้าท์</label>
-                        <input type="date" class="form-control" style="width: 50%;">
+                        <input type="date" class="form-control" style="width: 50%;" autocomplete="off" value="<?php echo isset($date_out) ? date("Y-m-d",strtotime($date_out)) : "" ?>">
                     </form>
                 </div>
                 <div class="col-md-3" style="border-left: 1px solid rgb(221, 221, 221) ;">

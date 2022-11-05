@@ -8,7 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>room</title>
+    <title>check out</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
 
@@ -22,11 +22,7 @@ session_start();
 </head>
 
 <body>
-    <h2><b>จัดการห้องพัก</b></h2>
-    <!-- Button trigger modal -->
-    <a href="./manage-add.php"><button type="button" class="btn btn-primary addroom" style="background-color: #EF774B; border:#EF774B;">
-        เพิ่มห้องพัก
-    </button></a>
+    <h2><b>Check Out</b></h2>
 
 
     <table id="myTable" class="display" style="width: 100%;">
@@ -35,6 +31,7 @@ session_start();
                 <th>ลำดับ</th>
                 <th>ประเภทห้อง</th>
                 <th>เลขห้อง</th>
+                <th>เลขที่อ้างอิง</th>
                 <th>สถานะห้อง</th>
                 <th>จัดการ</th>
             </tr>
@@ -52,11 +49,9 @@ session_start();
                 <td><?php echo $row['R_Type']; ?></td>
                 <td><?php echo $row['R_Bed']; ?></td>
                 <td><?php echo $row['R_Detail']; ?></td>
+                <td><?php echo $row['R_Detail']; ?></td>
                 <td>
-                    <div class="edit-delete">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
-                        <button type="button" class="btn btn-danger"><i class='bx bx-trash'></i>ลบ</button>
-                    </div>
+                    <!-- modal -->
                 </td>
             </tr>
             <?php } ?>
