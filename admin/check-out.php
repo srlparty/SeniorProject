@@ -34,31 +34,29 @@ session_start();
                 <th>เลขที่อ้างอิง</th>
                 <th>สถานะห้อง</th>
                 <th>จัดการ</th>
+                <th>ปริ้นใบเสร็จ</th>
             </tr>
         </thead>
         <tbody>
-        <?Php
-            require_once('../fuction/connectDB.php');
-            $result = $dbconn->prepare("SELECT * FROM room ");
-            $result->execute();
-            for($i=0; $row = $result->fetch(); $i++){
-        ?>
+
 
             <tr>
-                <td><?php echo $row['R_ID']; ?></td>
-                <td><?php echo $row['R_Type']; ?></td>
-                <td><?php echo $row['R_Bed']; ?></td>
-                <td><?php echo $row['R_Detail']; ?></td>
-                <td><?php echo $row['R_Detail']; ?></td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
                 <td>
-                    <!-- modal -->
+                    <center><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cal">รายละเอียดเพิ่มเติม</button></center>
+                </td>
+                <td>
+                    <!-- ปริ้นนนนนนนนนน -->
+                    <center><button type="button" class="btn btn-secondary"><i class='bx bxs-printer'></i></button></center>
                 </td>
             </tr>
-            <?php } ?>
         </tbody>
     </table>
-    <?php require '../fuction/modal-addroom.php';
-            require '../fuction/modal-editroom-1.php' ?>
+    <?php require '../fuction/modal-checkin-cal.php'; ?>
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();

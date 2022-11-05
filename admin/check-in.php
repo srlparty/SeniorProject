@@ -36,30 +36,22 @@ session_start();
             </tr>
         </thead>
         <tbody>
-        <?Php
-            require_once('../fuction/connectDB.php');
-            $result = $dbconn->prepare("SELECT * FROM room ");
-            $result->execute();
-            for($i=0; $row = $result->fetch(); $i++){
-        ?>
-
-            <tr>
-                <td><?php echo $row['R_ID']; ?></td>
-                <td><?php echo $row['R_Type']; ?></td>
-                <td><?php echo $row['R_Bed']; ?></td>
-                <td><?php echo $row['R_Detail']; ?></td>
+     <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
                 <td>
+                    <center>
                     <div class="edit-delete">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
-                        <button type="button" class="btn btn-danger"><i class='bx bx-trash'></i>ลบ</button>
-                    </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkin">check in</button>
+                    </div></center>
                 </td>
             </tr>
-            <?php } ?>
+
         </tbody>
     </table>
-    <?php require '../fuction/modal-addroom.php';
-            require '../fuction/modal-editroom-1.php' ?>
+    <?php require '../fuction/modal-checkin.php';?>
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();
