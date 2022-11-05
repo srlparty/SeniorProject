@@ -9,41 +9,54 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
 
-    <link rel="stylesheet" href="../css/accounting.css">
+    <link rel="stylesheet" href="../css/manage.css">
     <?php include "../admin/nav-admin.php";
     include "../fuction/importlink.php" ?>
 </head>
 
 <body>
-    <h2><b>บัญชี</b></h2>
+    <h2><b>บัญชีผู้ใช้</b></h2>
+
+    <a href="./accout-add.php"><button type="button" class="btn btn-primary addroom" style="background-color: #EF774B; border:#EF774B;">
+    <i class='bx bx-plus'></i>เพิ่มบัญชีผู้ใช้
+    </button></a>
+
     <table id="myTable" class="display" style="width: 100%;">
         <thead>
             <tr>
-            <th>หมายเลขการจอง</th>
-                <th>ชื่อ-สกุล</th>
-                <th>วันที่จอง</th>
-                <th>เวลาที่โอน</th>
-                <th>ธนาคารที่โอน</th>
-                <th>จำนวนเงิน</th>
-                <th>หลักฐานการชำระเงิน</th>
+                <th>ลำดับ</th>
+                <th>ชื่อผู้ใช้</th>
+                <th>ประเภท</th>
+                <th>จัดการ</th>
             </tr>
         </thead>
         <tbody>
-        <?Php
+            <?Php
             require_once('../fuction/connectDB.php');
             $result = $dbconn->prepare("SELECT * FROM payment , booking ");
             $result->execute();
-            for($i=0; $row = $result->fetch(); $i++){
-        ?>
-            <tr>
-            <td><?php echo $row['BK_ID']; ?></td>
-            <td><?php echo $row['PM_Name']; ?></td>
-            <td><?php echo $row['BK_Date']; ?></td>
-            <td><?php echo $row['BK_Time']; ?></td>
-            <td><?php echo $row['PM_Bank']; ?></td>
-            <td><?php echo $row['PM_Total']; ?></td>
-                <td>..</td>
-            </tr>
+            for ($i = 0; $row = $result->fetch(); $i++) {
+            ?>
+                <tr>
+                    <td><?php echo $row['BK_ID']; ?></td>
+                    <td><?php echo $row['PM_Name']; ?></td>
+                    <td><?php echo $row['BK_Date']; ?></td>
+                    <td>
+                        <center>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">จัดการ</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item edit_user" href="javascript:void(0)" data-id='<?php echo $row['id'] ?>'>แก้ไข</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item delete_user" href="javascript:void(0)" data-id='<?php echo $row['id'] ?>'>ลบ</a>
+                                </div>
+                            </div>
+                        </center>
+                    </td>
+                </tr>
             <?php } ?>
         </tbody>
     </table>

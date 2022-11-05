@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>board</title>
+    <title>check pay</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
 
@@ -19,7 +19,7 @@
     <table id="myTable" class="display" style="width: 100%;">
         <thead>
             <tr>
-                <th>หมายเลขคำสั่งจอง</th>
+                <th>ลำดับ</th>
                 <th>ประเภทห้อง</th>
                 <th>วันที่จอง</th>
                 <th>ชื่อ-สกุล</th>

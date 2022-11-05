@@ -17,9 +17,9 @@
 <body>
     <h2><b>บริการเสริม</b></h2>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary addser" style="background-color: #EF774B; border:#EF774B;" data-bs-toggle="modal" data-bs-target="#addser">
+    <a href="./service-add.php"><button type="button" class="btn btn-primary addser" style="background-color: #EF774B; border:#EF774B;" >
         เพิ่มบริการเสริม
-    </button>
+    </button></a>
 
     <table id="myTable" class="display" style="width: 100%;">
         <thead>
