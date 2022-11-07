@@ -66,6 +66,7 @@ session_start();
                                                 <button class="btn btn-primary check_out modal_data" type="button" id="<?php echo $row['b_id'] ?>">ดูรายเอียดเพิ่มเติม</button>
                                             </td>
 
+<<<<<<< HEAD
                                         </tr>
                                     <?php endwhile; ?>
                                 </tbody>
@@ -101,6 +102,35 @@ session_start();
     </script>
     <?php require '../fuction/modal-addroom.php';
     require '../fuction/modal-editroom-1.php' ?>
+=======
+    <table id="myTable" class="display" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>ลำดับ</th>
+                <th>ประเภทห้อง</th>
+                <th>วันที่จอง</th>
+                <th>ชื่อผู้จอง</th>
+                <th>รายละเอียดเพิ่มเติม</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>
+                    <center>
+                    <div class="edit-delete">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingdetail">ดูรายละเอียดเพิ่มเติม</button>
+                    </div></center>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <?php require '../fuction/modal-booking-detail.php';?>
+>>>>>>> 4ec202629a095bee07f2f887cf8096ab62b464d9
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();

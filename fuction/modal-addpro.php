@@ -1,5 +1,5 @@
 <div class="modal fade" id="addpro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">เพิ่มโปรโมชั่น</h5>
@@ -33,7 +33,7 @@
                     <div class="row">
                         <label for="R_ID" class="form-label">ช่วงเวลาโปรโมชั่น</label>
                         <div class="col-md-6">
-                            <input type="date" class="form-control" id="R_ID" name="R_ID" aria-describedby="emailHelp">
+                            <input type="date" class="form-control" id="R_ID" name="R_ID" aria-describedby="emailHelp"> 
                         </div>
                         <div class="col-md-6">
                             <input type="date" class="form-control" id="R_ID" name="R_ID" aria-describedby="emailHelp">

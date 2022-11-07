@@ -38,6 +38,7 @@ session_start();
             </tr>
         </thead>
         <tbody>
+<<<<<<< HEAD
             <?php while ($row = $result->fetch_assoc()) : ?>
                 <tr>
                     <td><?php echo $count_n; ?></td>
@@ -57,6 +58,24 @@ session_start();
     </table>
     <?php require '../fuction/modal-addroom.php';
     require '../fuction/modal-editroom-1.php' ?>
+=======
+     <tr>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>.</td>
+                <td>
+                    <center>
+                    <div class="edit-delete">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkin">check in</button>
+                    </div></center>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <?php require '../fuction/modal-checkin.php';?>
+>>>>>>> 4ec202629a095bee07f2f887cf8096ab62b464d9
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();

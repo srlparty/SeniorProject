@@ -34,6 +34,7 @@
                         <a class="nav-link" href="./mybooking.php">การจองของฉัน</a>
                     </li>
                 </ul>
+<<<<<<< HEAD
                 <!-- <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" <?Php
@@ -43,14 +44,29 @@
                     for ($i = 0; $row = $result->fetch(); $i++) {
                     ?>
                      <?php echo $row['firstname']; ?> </a>
+=======
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+                    <?Php
+                    require_once('../fuction/connectDB.php');
+                    $result = $dbconn->prepare("SELECT * FROM user");
+                    $result->execute();
+                    for ($i = 0; $row = $result->fetch(); $i++) {  ?> <?php echo $row['firstname']; ?>  
+                    </a>
+>>>>>>> 4ec202629a095bee07f2f887cf8096ab62b464d9
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./editinfo.php">แก้ไขข้อมูลส่วนตัว</a></li>
                             <li><a class="dropdown-item" href="./logout.php">ออกจากระบบ</a></li>
                         </ul>
                 </li>
             <?php
+<<<<<<< HEAD
           }
             ?> -->
+=======
+              }
+            ?>
+>>>>>>> 4ec202629a095bee07f2f887cf8096ab62b464d9
             </div>
         </div>
         <!-- <form class="login-regis" >
