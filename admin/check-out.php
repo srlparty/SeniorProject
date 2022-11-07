@@ -51,7 +51,7 @@ session_start();
                 </td>
                 <td>
                     <!-- ปริ้นนนนนนนนนน -->
-                    <center><button type="button" class="btn btn-secondary"><i class='bx bxs-printer'></i></button></center>
+                    <center><button type="button" class="btn btn-secondary"><i class='bx bxs-printer'></i>พิมพ์</button></center>
                 </td>
             </tr>
         </tbody>

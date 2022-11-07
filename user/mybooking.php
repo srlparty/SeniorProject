@@ -51,7 +51,7 @@
                 <td><?php echo $row['BK_Status']; ?></td>
                 <td>
                 <div class="print">
-                        <button type="button" class="btn btn-success" style="width: 100px;"><i class='bx bxs-printer'></i>พิมพ์</button>
+                        <button type="button" class="btn btn-secondary" style="width: 100px;"><i class='bx bxs-printer'></i>พิมพ์</button>
                     </div>
                 </td>
                 </tr>

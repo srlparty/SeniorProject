@@ -58,7 +58,7 @@ session_start();
                             <div class="card-footer">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <button class="btn btn-sm btn-success col-sm-3 offset-md-3">บันทึก</button>
+                                        <button class="btn btn-sm btn-primary col-sm-3 offset-md-3">บันทึก</button>
                                         <button class="btn btn-sm btn-danger col-sm-3" type="button" onclick="$('#manage-room').get(0).reset()">ยกเลิก</button>
                                     </div>
                                 </div>
