@@ -25,28 +25,32 @@
                         <a class="nav-link" aria-current="page" href="./index-user.php">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="./list.php">ห้องพัก</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./payment.php">ชำระเงิน</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./mybooking.php">การจองของฉัน</a>
                     </li>
                 </ul>
-                <li class="nav-item dropdown">
+                <!-- <li class="nav-item dropdown">
 
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" <?Php
-                                                                                                                                require_once('../fuction/connectDB.php');
-                                                                                                                                $result = $dbconn->prepare("SELECT * FROM user");
-                                                                                                                                $result->execute();
-                                                                                                                                for ($i = 0; $row = $result->fetch(); $i++) {
-                                                                                                                                ?> <?php echo $row['firstname']; ?> </a>
+                    require_once('../fuction/connectDB.php');
+                    $result = $conn->prepare("SELECT * FROM user");
+                    $result->execute();
+                    for ($i = 0; $row = $result->fetch(); $i++) {
+                    ?>
+                     <?php echo $row['firstname']; ?> </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./editinfo.php">แก้ไขข้อมูลส่วนตัว</a></li>
                             <li><a class="dropdown-item" href="./logout.php">ออกจากระบบ</a></li>
                         </ul>
                 </li>
             <?php
-                                                                                                                                }
-            ?>
+          }
+            ?> -->
             </div>
         </div>
         <!-- <form class="login-regis" >

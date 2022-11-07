@@ -49,7 +49,7 @@
        <span class="tooltip">Check Out</span>
      </li>
       <li>
-       <a href="./categories.php">
+       <a href="./categories-add.php">
        <i class='bx bxs-bed'></i> 
          <span class="links_name">จัดการประเภทห้องพัก</span>
        </a>

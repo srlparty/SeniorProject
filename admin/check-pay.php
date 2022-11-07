@@ -11,7 +11,11 @@
 
     <link rel="stylesheet" href="../css/check-pay.css">
     <?php include "../admin/nav-admin.php";
-    include "../fuction/importlink.php" ?>
+    include "../fuction/importlink.php";
+    include "../fuction/connectDB.php";
+    $count_n = 1;
+    $sql = "SELECT * FROM payment , booking ,roomtype ";
+    $result = $conn->query($sql); ?>
 </head>
 
 <body>
@@ -28,38 +32,31 @@
                 <th>จัดการ</th>
             </tr>
         </thead>
-        <?Php
-            require_once('../fuction/connectDB.php');
-            $result = $dbconn->prepare("SELECT * FROM room , payment , booking");
-            $result->execute();
-            for($i=0; $row = $result->fetch(); $i++){
-        ?>
-        <tbody>
-            <tr>
-            <td><?php echo $row['BK_ID']; ?></td>
-            <td><?php echo $row['R_Type']; ?></td>
-            <td><?php echo $row['BK_Date']; ?></td>
-            <td><?php echo $row['PM_Name']; ?></td>
-            <td><?php echo $row['PM_Tel']; ?></td>
-                <td>
-                    <div class="detail-booking">
-                    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#detail-booking">รายละเอียดการจอง</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="edit-delete">
-                        <button type="button" class="btn btn-success">ยืนยัน</button>
-                        <button type="button" class="btn btn-danger">ยกเลิก</button>
-                    </div>
-                </td>
-            </tr>
-            <?php
-            }
-
-            ?>
-        </tbody>
+        <?php while ($row = $result->fetch_assoc()) : ?>
+            <tbody>
+                <tr>
+                    <td><?php echo $count_n; ?></td>
+                    <td><?php echo $row['RT_Name']; ?></td>
+                    <td><?php echo $row['BK_Date']; ?></td>
+                    <td><?php echo $row['PM_Name']; ?></td>
+                    <td><?php echo $row['PM_Tel']; ?></td>
+                    <td>
+                        <div class="detail-booking">
+                            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#detail-booking">รายละเอียดการจอง</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="edit-delete">
+                            <button type="button" class="btn btn-success">ยืนยัน</button>
+                            <button type="button" class="btn btn-danger">ยกเลิก</button>
+                        </div>
+                    </td>
+                </tr>
+            <?php $count_n++;
+        endwhile ?>
+            </tbody>
     </table>
-    <?php require '../fuction/modal-detail-booking.php'?>
+    <?php require '../fuction/modal-detail-booking.php' ?>
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();

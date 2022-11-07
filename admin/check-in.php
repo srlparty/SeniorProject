@@ -17,7 +17,9 @@ session_start();
     include "../admin/nav-admin.php";
     include "../fuction/importlink.php";
     include "../fuction/connectDB.php";
-
+    $count_n = 1;
+    $sql = "SELECT * FROM room , roomtype ,roomstatus ";
+    $result = $conn->query($sql);
     ?>
 </head>
 
@@ -36,30 +38,25 @@ session_start();
             </tr>
         </thead>
         <tbody>
-        <?Php
-            require_once('../fuction/connectDB.php');
-            $result = $dbconn->prepare("SELECT * FROM room ");
-            $result->execute();
-            for($i=0; $row = $result->fetch(); $i++){
-        ?>
-
-            <tr>
-                <td><?php echo $row['R_ID']; ?></td>
-                <td><?php echo $row['R_Type']; ?></td>
-                <td><?php echo $row['R_Bed']; ?></td>
-                <td><?php echo $row['R_Detail']; ?></td>
-                <td>
-                    <div class="edit-delete">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
-                        <button type="button" class="btn btn-danger"><i class='bx bx-trash'></i>ลบ</button>
-                    </div>
-                </td>
-            </tr>
-            <?php } ?>
+            <?php while ($row = $result->fetch_assoc()) : ?>
+                <tr>
+                    <td><?php echo $count_n; ?></td>
+                    <td><?php echo $row['RT_Name']; ?></td>
+                    <td><?php echo $row['R_ID']; ?></td>
+                    <td><?php echo $row['RS_Name']; ?></td>
+                    <td>
+                        <div class="edit-delete">
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#editroom"><i class='bx bx-edit-alt'></i>แก้ไข</button>
+                            <button type="button" class="btn btn-danger"><i class='bx bx-trash'></i>ลบ</button>
+                        </div>
+                    </td>
+                </tr>
+            <?php $count_n++;
+            endwhile ?>
         </tbody>
     </table>
     <?php require '../fuction/modal-addroom.php';
-            require '../fuction/modal-editroom-1.php' ?>
+    require '../fuction/modal-editroom-1.php' ?>
     <script>
         $(document).ready(function() {
             $("#myTable").DataTable();

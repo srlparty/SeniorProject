@@ -20,7 +20,6 @@
 </head>
 
 <body>
-    <h3>การจองของฉัน</h3>
 
     <table id="myTable" class="display" style="width: 100%;">
         <thead>
@@ -36,7 +35,7 @@
         <?php
            
             require_once('../fuction/connectDB.php');
-            $result = $dbconn->prepare("SELECT * FROM payment , booking ");
+            $result = $conn->prepare("SELECT * FROM payment , booking ");
             $result->execute();
             for($i=0; $row = $result->fetch(); $i++){
         ?>
