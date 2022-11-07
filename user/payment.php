@@ -2,6 +2,9 @@
 $date_in = isset($_POST['date_in']) ? $_POST['date_in'] : date('Y-m-d');
 $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strtotime(date('Y-m-d') . ' + 3 days'));
 ?>
+<?php
+include './nav.php'
+?>
 <style>
     .countbutton .btn-outline-primary:hover {
         color: #fff;
@@ -15,20 +18,9 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
         border-color: #0d6efd;
     }
 </style>
-<!-- Masthead-->
-<header class="masthead">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center justify-content-center text-center">
-            <div class="col-lg-10 align-self-end mb-4" style="background: #0000002e;">
-                <h1 class="text-uppercase text-white font-weight-bold">ชำระเงิน</h1>
-                <hr class="divider my-4" />
-            </div>
 
-        </div>
-    </div>
-</header>
 
-<section class="page-section bg-dark">
+<section class="page-section bg-dark"><br>
 
     <div class="container">
         <div class="col-lg-12">
@@ -134,7 +126,7 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
                                     <label class="form-label">ธนาคารที่ใช้โอนเงิน</label>
                                     <select class="custom-select browser-default" name="PM_Bank" require>
                                         <?php
-                                        $cat = $conn->query("SELECT * FROM `bank` ORDER BY `bank`.`Bank_ID` ASC");
+                                        $cat = $conn->query("SELECT * FROM bank ORDER BY bank.`Bank_ID` ASC");
                                         while ($row = $cat->fetch_assoc()) {
                                         ?>
                                             <option value="<?php echo $row['Bank_ID'] ?>"><?php echo $row['Bank'] ?></option>
@@ -163,9 +155,9 @@ $date_out = isset($_POST['date_out']) ? $_POST['date_out'] : date('Y-m-d', strto
         </div>
 </section>
 <?php
-include "./admin/db_connect.php";
+include "../fuction/connectDB.php";
 $id = $_GET['id'];
-$queryinfo = mysqli_query($conn, "SELECT * FROM `room_categories` WHERE `id` = $id");
+$queryinfo = mysqli_query($conn, "SELECT * FROM room_categories WHERE id = $id");
 $row = mysqli_fetch_array($queryinfo);
 extract($row);
 
@@ -201,18 +193,18 @@ if (isset($_POST['save-payment'])) {
     $kids = $_POST['kids'];
 
     $insertbook = mysqli_query($conn, "INSERT INTO `roombook`(
-        `TP_ID`,
-        `checkin`,
-        `checkout`,
-        `days`,
-        `adults`,
-        `kids`,
-        `extraservice`,
-        `room_cat_id`
+        TP_ID,
+        checkin,
+        checkout,
+        days,
+        adults,
+        kids,
+        extraservice,
+        room_cat_id
      ) VALUES('$type_pay','$checkin','$checkout','$days','$adults','$kids','$extraservice','$id')");
 
     $b_id =  mysqli_insert_id($conn);
-    $query = mysqli_query($conn, "INSERT INTO `payment`( `PM_Idcard`, `PM_Name`, `PM_Email`, `PM_Tel`, `PM_Date`, `PM_Time`, `PM_Bank`, `PM_Total`,`PM_Img`,`B_id` ) VALUES( '$PM_Idcard', '$PM_Name', '$PM_Email', '$PM_Tel', '$PM_Date', '$PM_Time' , '$PM_Bank', '$PM_Total','$PM_Img','$b_id' )");
+    $query = mysqli_query($conn, "INSERT INTO payment`( PM_Idcard`, PM_Name, PM_Email, PM_Tel, PM_Date, PM_Time, PM_Bank, PM_Total,`PM_Img`,`B_id` ) VALUES( '$PM_Idcard', '$PM_Name', '$PM_Email', '$PM_Tel', '$PM_Date', '$PM_Time' , '$PM_Bank', '$PM_Total','$PM_Img','$b_id' )");
 
 
     if ($insertbook) {

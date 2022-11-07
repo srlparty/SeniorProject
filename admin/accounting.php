@@ -11,15 +11,19 @@
 
     <link rel="stylesheet" href="../css/manage.css">
     <?php include "../admin/nav-admin.php";
-    include "../fuction/importlink.php" ?>
+    include "../fuction/importlink.php";
+    include "../fuction/connectDB.php";
+    $count_n = 1;
+    $sql = "SELECT * FROM user ";
+    $result = $conn->query($sql); ?>
 </head>
 
 <body>
     <h2><b>บัญชีผู้ใช้</b></h2>
 
     <a href="./accout-add.php"><button type="button" class="btn btn-primary addroom" style="background-color: #EF774B; border:#EF774B;">
-    <i class='bx bx-plus'></i>เพิ่มบัญชีผู้ใช้
-    </button></a>
+            <i class='bx bx-plus'></i>เพิ่มบัญชีผู้ใช้
+        </button></a>
 
     <table id="myTable" class="display" style="width: 100%;">
         <thead>
@@ -31,16 +35,11 @@
             </tr>
         </thead>
         <tbody>
-            <?Php
-            require_once('../fuction/connectDB.php');
-            $result = $dbconn->prepare("SELECT * FROM payment , booking ");
-            $result->execute();
-            for ($i = 0; $row = $result->fetch(); $i++) {
-            ?>
+            <?php while ($row = $result->fetch_assoc()) : ?>
                 <tr>
-                    <td><?php echo $row['BK_ID']; ?></td>
-                    <td><?php echo $row['PM_Name']; ?></td>
-                    <td><?php echo $row['BK_Date']; ?></td>
+                    <td><?php echo $count_n; ?></td>
+                    <td><?php echo $row['firstname']; ?></td>
+                    <td><?php echo $row['urole']; ?></td>
                     <td>
                         <center>
                             <div class="btn-group">
@@ -57,7 +56,8 @@
                         </center>
                     </td>
                 </tr>
-            <?php } ?>
+            <?php $count_n++;
+            endwhile ?>
         </tbody>
     </table>
 
